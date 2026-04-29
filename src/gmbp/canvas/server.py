@@ -69,7 +69,7 @@ def _run_server():
     import logging
     log = logging.getLogger("uvicorn")
     log.setLevel(logging.CRITICAL)
-    uvicorn.run(app, host="127.0.0.1", port=8080, log_level="critical")
+    uvicorn.run(app, host="0.0.0.0", port=8080, log_level="critical")
 
 def start_canvas_server():
     """Spawns the telemetry server in a daemon thread."""
