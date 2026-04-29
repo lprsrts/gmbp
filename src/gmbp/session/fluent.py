@@ -1,39 +1,45 @@
 from ..inference.em import fit_gmm_to_data
 
 class FluentFactor:
-    """Builder object for chaining operations on a FactorNode."""
     def __init__(self, session, factor_name):
         self.session = session
-        self.factor_name = factor_name
-        self.node = session.graph.factors[factor_name]
+        self.factor_id = session.graph.resolve_id(factor_name)
+        self.node = session.graph.factors[self.factor_id]
 
     def fit_gm(self, data, N=1):
-        """Fits a Gaussian Mixture to the factor's potential using empirical data."""
         self.node.potential = fit_gmm_to_data(data, n_components=N)
-        print(f"[Factor:{self.factor_name}] Fitted GMM with {N} components.")
-        # TODO: Broadcast visual update to canvas
+        print(f"[Factor:{self.node.name}] Fitted GMM with {N} components.")
+        return self
+
+    def rename(self, new_name):
+        old_name = self.node.name
+        self.session.graph.rename_node(old_name, new_name)
+        print(f"[Factor:{old_name}] Renamed to {new_name}.")
         return self
 
 class FluentVariable:
-    """Builder object for chaining operations on a VariableNode."""
     def __init__(self, session, variable_name):
         self.session = session
-        self.variable_name = variable_name
-        self.node = session.graph.variables[variable_name]
+        self.variable_id = session.graph.resolve_id(variable_name)
+        self.node = session.graph.variables[self.variable_id]
 
     def at(self, value):
-        """Observes the variable at a specific deterministic value."""
         self.node.observed_value = value
-        print(f"[Variable:{self.variable_name}] Observed at {value}.")
-        # TODO: Broadcast visual update to canvas
+        print(f"[Variable:{self.node.name}] Observed at {value}.")
+        return self
+        
+    def rename(self, new_name):
+        old_name = self.node.name
+        self.session.graph.rename_node(old_name, new_name)
+        print(f"[Variable:{old_name}] Renamed to {new_name}.")
         return self
 
 class Observer:
-    """Intermediate object allowing `observe().variable("X").at(0.4)` syntax."""
     def __init__(self, session):
         self.session = session
 
     def variable(self, name):
-        if name not in self.session.graph.variables:
-            raise ValueError(f"Variable '{name}' not found in graph.")
         return FluentVariable(self.session, name)
+
+def variable_fluent(session, name):
+    return FluentVariable(session, name)
