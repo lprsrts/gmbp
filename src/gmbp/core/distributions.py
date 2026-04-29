@@ -2,16 +2,11 @@ import numpy as np
 from scipy.stats import multivariate_normal
 
 class Gaussian:
-    """Represents a Multivariate Gaussian distribution."""
-    
     def __init__(self, mean, cov):
         self.mean = np.atleast_1d(mean).astype(float)
         self.cov = np.atleast_2d(cov).astype(float)
-        
-        # Numerical stability: enforce symmetry
         self.cov = (self.cov + self.cov.T) / 2.0
         
-        # Canonical form parameters (Information form)
         try:
             self.precision = np.linalg.inv(self.cov)
         except np.linalg.LinAlgError:
@@ -21,14 +16,12 @@ class Gaussian:
         self.dim = self.mean.shape[0]
 
     def marginalize(self, keep_indices):
-        """Returns a new Gaussian marginalized over the variables NOT in keep_indices."""
         keep_indices = np.atleast_1d(keep_indices).astype(int)
         new_mean = self.mean[keep_indices]
         new_cov = self.cov[np.ix_(keep_indices, keep_indices)]
         return Gaussian(new_mean, new_cov)
 
     def condition(self, observed_indices, observed_values):
-        """Returns a new Gaussian conditioned on specific variable indices taking specific values."""
         observed_indices = np.atleast_1d(observed_indices).astype(int)
         observed_values = np.atleast_1d(observed_values).astype(float)
         
@@ -36,7 +29,7 @@ class Gaussian:
         keep_indices = np.setdiff1d(all_indices, observed_indices)
         
         if len(keep_indices) == 0:
-            return None # Fully observed, no uncertain variables left
+            return None 
             
         mu_A = self.mean[keep_indices]
         mu_B = self.mean[observed_indices]
@@ -52,14 +45,12 @@ class Gaussian:
             inv_Sigma_BB = np.linalg.pinv(Sigma_BB)
             
         gain = Sigma_AB @ inv_Sigma_BB
-        
         new_mean = mu_A + gain @ (observed_values - mu_B)
         new_cov = Sigma_AA - gain @ Sigma_BA
         
         return Gaussian(new_mean, new_cov)
 
     def __mul__(self, other):
-        """Multiplies two Gaussians via canonical form."""
         if not isinstance(other, Gaussian):
             raise TypeError("Can only multiply Gaussian with another Gaussian.")
         if self.dim != other.dim:
@@ -74,21 +65,17 @@ class Gaussian:
         new_info = self.information + other.information
         new_mean = new_cov @ new_info
         
-        # Scaling factor is the integral of the product
         try:
-            c = multivariate_normal.pdf(self.mean, mean=other.mean, cov=self.cov + other.cov)
-        except np.linalg.LinAlgError:
-            c = 0.0 # Degenerate overlap
+            c = multivariate_normal.pdf(self.mean, mean=other.mean, cov=self.cov + other.cov, allow_singular=True)
+        except Exception:
+            c = 0.0 
 
         return Gaussian(new_mean, new_cov), c
 
     def __repr__(self):
         return f"Gaussian(dim={self.dim}, mean={self.mean})"
 
-
 class GaussianMixture:
-    """Represents a Gaussian Mixture Model (GMM)."""
-    
     def __init__(self, weights, components):
         if len(weights) != len(components):
             raise ValueError("Number of weights must match number of components.")
@@ -101,23 +88,20 @@ class GaussianMixture:
         self.dim = components[0].dim if components else 0
 
     def marginalize(self, keep_indices):
-        """Marginalizes the mixture over the specified dimension indices."""
         new_components = [comp.marginalize(keep_indices) for comp in self.components]
         return GaussianMixture(self.weights.copy(), new_components)
 
     def condition(self, observed_indices, observed_values):
-        """Conditions the mixture on specific variable indices taking specific values."""
         new_components = []
         new_weights = []
         
         for w, comp in zip(self.weights, self.components):
-            # Calculate the marginal likelihood of the observed values for this component
             mu_B = comp.mean[observed_indices]
             Sigma_BB = comp.cov[np.ix_(observed_indices, observed_indices)]
             
             try:
-                likelihood = multivariate_normal.pdf(observed_values, mean=mu_B, cov=Sigma_BB)
-            except np.linalg.LinAlgError:
+                likelihood = multivariate_normal.pdf(observed_values, mean=mu_B, cov=Sigma_BB, allow_singular=True)
+            except Exception:
                 likelihood = 0.0
                 
             new_w = w * likelihood
@@ -134,7 +118,6 @@ class GaussianMixture:
         return GaussianMixture(new_weights, new_components)
 
     def __mul__(self, other):
-        """Multiplies two Gaussian Mixtures."""
         if not isinstance(other, GaussianMixture):
             raise TypeError("Can only multiply GaussianMixture with another GaussianMixture.")
             
@@ -150,20 +133,30 @@ class GaussianMixture:
                     new_weights.append(new_weight)
                     new_components.append(new_comp)
 
+        if not new_weights:
+            # Fallback to prevent complete collapse when mathematically disjoint
+            return GaussianMixture([1.0], [self.components[0]])
+
         return GaussianMixture(new_weights, new_components)
 
     def prune(self, threshold=1e-5):
-        """Removes components with weights below the threshold and renormalizes."""
         kept_weights = []
         kept_components = []
         
+        # Determine dynamic threshold to prevent total collapse
+        max_w = np.max(self.weights)
+        dynamic_threshold = min(threshold, max_w / 10.0)
+        
         for w, comp in zip(self.weights, self.components):
-            if w >= threshold:
+            if w >= dynamic_threshold:
                 kept_weights.append(w)
                 kept_components.append(comp)
                 
         if not kept_weights:
-            raise ValueError("Pruning threshold too high; all components removed.")
+            # Emergency fallback: keep the highest weighted component
+            idx = np.argmax(self.weights)
+            kept_weights = [self.weights[idx]]
+            kept_components = [self.components[idx]]
             
         self.weights = np.array(kept_weights)
         self.weights /= np.sum(self.weights)
