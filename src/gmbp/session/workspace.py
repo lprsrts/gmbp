@@ -9,7 +9,7 @@ class Session:
         self.graph = FactorGraph()
         self.engine = BeliefPropagation(self.graph)
         self._server_thread = start_canvas_server()
-        time.sleep(0.5)  # Extended wait to ensure server is bound and ready to queue
+        time.sleep(0.5)
 
     def _sync_graph(self):
         nodes = []
@@ -80,3 +80,12 @@ class Session:
         self.engine = BeliefPropagation(self.graph)
         print("[Session] Graph cleared.")
         self._sync_graph()
+
+def load_data(url_or_path):
+    """Utility to load external datasets into the REPL."""
+    try:
+        import pandas as pd
+        print(f"[Data] Loading dataset from {url_or_path} ...")
+        return pd.read_csv(url_or_path)
+    except ImportError:
+        raise ImportError("Pandas is required to load data. Ensure it is installed via `uv add pandas`.")

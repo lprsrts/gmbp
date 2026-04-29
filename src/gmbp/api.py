@@ -1,4 +1,4 @@
-from .session.workspace import Session
+from .session.workspace import Session, load_data
 
 _active_session = Session()
 
