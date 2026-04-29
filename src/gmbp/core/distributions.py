@@ -8,32 +8,77 @@ class Gaussian:
         self.mean = np.atleast_1d(mean).astype(float)
         self.cov = np.atleast_2d(cov).astype(float)
         
-        # Canonical form parameters (Information form) 
-        # Crucial for stable Belief Propagation multiplications.
-        self.precision = np.linalg.inv(self.cov)
-        self.information = self.precision @ self.mean
+        # Numerical stability: enforce symmetry
+        self.cov = (self.cov + self.cov.T) / 2.0
         
+        # Canonical form parameters (Information form)
+        try:
+            self.precision = np.linalg.inv(self.cov)
+        except np.linalg.LinAlgError:
+            self.precision = np.linalg.pinv(self.cov)
+            
+        self.information = self.precision @ self.mean
         self.dim = self.mean.shape[0]
 
+    def marginalize(self, keep_indices):
+        """Returns a new Gaussian marginalized over the variables NOT in keep_indices."""
+        keep_indices = np.atleast_1d(keep_indices).astype(int)
+        new_mean = self.mean[keep_indices]
+        new_cov = self.cov[np.ix_(keep_indices, keep_indices)]
+        return Gaussian(new_mean, new_cov)
+
+    def condition(self, observed_indices, observed_values):
+        """Returns a new Gaussian conditioned on specific variable indices taking specific values."""
+        observed_indices = np.atleast_1d(observed_indices).astype(int)
+        observed_values = np.atleast_1d(observed_values).astype(float)
+        
+        all_indices = np.arange(self.dim)
+        keep_indices = np.setdiff1d(all_indices, observed_indices)
+        
+        if len(keep_indices) == 0:
+            return None # Fully observed, no uncertain variables left
+            
+        mu_A = self.mean[keep_indices]
+        mu_B = self.mean[observed_indices]
+        
+        Sigma_AA = self.cov[np.ix_(keep_indices, keep_indices)]
+        Sigma_AB = self.cov[np.ix_(keep_indices, observed_indices)]
+        Sigma_BA = self.cov[np.ix_(observed_indices, keep_indices)]
+        Sigma_BB = self.cov[np.ix_(observed_indices, observed_indices)]
+        
+        try:
+            inv_Sigma_BB = np.linalg.inv(Sigma_BB)
+        except np.linalg.LinAlgError:
+            inv_Sigma_BB = np.linalg.pinv(Sigma_BB)
+            
+        gain = Sigma_AB @ inv_Sigma_BB
+        
+        new_mean = mu_A + gain @ (observed_values - mu_B)
+        new_cov = Sigma_AA - gain @ Sigma_BA
+        
+        return Gaussian(new_mean, new_cov)
+
     def __mul__(self, other):
-        """
-        Multiplies two Gaussians. 
-        In canonical form, multiplication is simply the addition of information vectors and precision matrices.
-        """
+        """Multiplies two Gaussians via canonical form."""
         if not isinstance(other, Gaussian):
             raise TypeError("Can only multiply Gaussian with another Gaussian.")
-            
         if self.dim != other.dim:
             raise ValueError("Gaussians must have the same dimensionality to be multiplied.")
 
         new_precision = self.precision + other.precision
-        new_cov = np.linalg.inv(new_precision)
+        try:
+            new_cov = np.linalg.inv(new_precision)
+        except np.linalg.LinAlgError:
+            new_cov = np.linalg.pinv(new_precision)
+            
         new_info = self.information + other.information
         new_mean = new_cov @ new_info
         
-        # Calculate the scaling factor (the integral of the product)
-        # This becomes the new weight when multiplying mixtures.
-        c = multivariate_normal.pdf(self.mean, mean=other.mean, cov=self.cov + other.cov)
+        # Scaling factor is the integral of the product
+        try:
+            c = multivariate_normal.pdf(self.mean, mean=other.mean, cov=self.cov + other.cov)
+        except np.linalg.LinAlgError:
+            c = 0.0 # Degenerate overlap
 
         return Gaussian(new_mean, new_cov), c
 
@@ -49,16 +94,47 @@ class GaussianMixture:
             raise ValueError("Number of weights must match number of components.")
             
         self.weights = np.array(weights).astype(float)
-        # Normalize weights to ensure they sum to 1
-        self.weights /= np.sum(self.weights)
+        if np.sum(self.weights) > 0:
+            self.weights /= np.sum(self.weights)
+            
         self.components = components
-        self.dim = components[0].dim
+        self.dim = components[0].dim if components else 0
+
+    def marginalize(self, keep_indices):
+        """Marginalizes the mixture over the specified dimension indices."""
+        new_components = [comp.marginalize(keep_indices) for comp in self.components]
+        return GaussianMixture(self.weights.copy(), new_components)
+
+    def condition(self, observed_indices, observed_values):
+        """Conditions the mixture on specific variable indices taking specific values."""
+        new_components = []
+        new_weights = []
+        
+        for w, comp in zip(self.weights, self.components):
+            # Calculate the marginal likelihood of the observed values for this component
+            mu_B = comp.mean[observed_indices]
+            Sigma_BB = comp.cov[np.ix_(observed_indices, observed_indices)]
+            
+            try:
+                likelihood = multivariate_normal.pdf(observed_values, mean=mu_B, cov=Sigma_BB)
+            except np.linalg.LinAlgError:
+                likelihood = 0.0
+                
+            new_w = w * likelihood
+            
+            if new_w > 0:
+                new_comp = comp.condition(observed_indices, observed_values)
+                if new_comp is not None:
+                    new_weights.append(new_w)
+                    new_components.append(new_comp)
+                    
+        if sum(new_weights) == 0:
+            raise ValueError("Observation has zero probability under all mixture components.")
+            
+        return GaussianMixture(new_weights, new_components)
 
     def __mul__(self, other):
-        """
-        Multiplies two Gaussian Mixtures.
-        Results in a new mixture with N * M components.
-        """
+        """Multiplies two Gaussian Mixtures."""
         if not isinstance(other, GaussianMixture):
             raise TypeError("Can only multiply GaussianMixture with another GaussianMixture.")
             
@@ -67,14 +143,12 @@ class GaussianMixture:
 
         for w1, comp1 in zip(self.weights, self.components):
             for w2, comp2 in zip(other.weights, other.components):
-                # Product of two Gaussians
                 new_comp, scale = comp1 * comp2
-                
-                # The new weight is the product of prior weights and the scaling factor
                 new_weight = w1 * w2 * scale
                 
-                new_weights.append(new_weight)
-                new_components.append(new_comp)
+                if new_weight > 0:
+                    new_weights.append(new_weight)
+                    new_components.append(new_comp)
 
         return GaussianMixture(new_weights, new_components)
 
@@ -88,6 +162,9 @@ class GaussianMixture:
                 kept_weights.append(w)
                 kept_components.append(comp)
                 
+        if not kept_weights:
+            raise ValueError("Pruning threshold too high; all components removed.")
+            
         self.weights = np.array(kept_weights)
         self.weights /= np.sum(self.weights)
         self.components = kept_components
