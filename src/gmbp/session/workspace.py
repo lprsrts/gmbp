@@ -8,9 +8,20 @@ class Session:
         self.engine = BeliefPropagation(self.graph)
 
     def add_variable(self, *names):
+        """
+        Adds one or more variables to the graph.
+        If a single name is provided, returns a FluentVariable for chaining.
+        If multiple names are provided, returns a list of FluentVariables.
+        """
+        fluents = []
         for name in names:
             self.graph.add_variable(name)
             print(f"[Session] Variable added: {name}")
+            fluents.append(FluentVariable(self, name))
+            
+        if len(fluents) == 1:
+            return fluents[0]
+        return fluents
 
     def add_factor(self, name, scope):
         self.graph.add_factor(name, scope)
