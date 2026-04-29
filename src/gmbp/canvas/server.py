@@ -27,9 +27,33 @@ class ConnectionManager:
 
 manager = ConnectionManager()
 
+# The queue to receive messages from the synchronous REPL
+_telemetry_queue = None
+
+# Globals to store latest state
+_latest_graph_state = None
+_latest_belief_state = None
+
+async def telemetry_worker():
+    global _latest_graph_state, _latest_belief_state, _telemetry_queue
+    while True:
+        event = await _telemetry_queue.get()
+        if event["event"] == "GRAPH_SYNC":
+            _latest_graph_state = event
+        elif event["event"] == "BELIEF_SYNC":
+            _latest_belief_state = event
+            
+        await manager.broadcast(event)
+        _telemetry_queue.task_done()
+
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
     await manager.connect(websocket)
+    if _latest_graph_state:
+        await websocket.send_text(json.dumps(_latest_graph_state))
+    if _latest_belief_state:
+        await websocket.send_text(json.dumps(_latest_belief_state))
+        
     try:
         while True:
             await websocket.receive_text()
@@ -113,10 +137,10 @@ HTML_CONTENT = """
     const connectWebSocket = () => {
         const ws = new WebSocket(`ws://${window.location.host}/ws`);
         ws.onopen = function() {
-            console.log("WebSocket connected. Requesting initial state.");
-            ws.send(JSON.stringify({command: "REQUEST_STATE"}));
+            console.log("WebSocket connected.");
         };
         ws.onmessage = function(event) {
+            console.log("Received data:", event.data);
             const msg = JSON.parse(event.data);
             if (msg.event === "GRAPH_SYNC") { cy.elements().remove(); cy.add(msg.payload.nodes); cy.add(msg.payload.edges); cy.layout({ name: 'cose', animate: true, randomize: false }).run(); } 
             else if (msg.event === "BELIEF_SYNC") { nodeBeliefs = msg.payload; const selected = cy.$(':selected'); if (selected.length > 0 && selected[0].data('type') === 'variable') renderVariablePlot(selected[0].id(), selected[0].data('name')); }
@@ -134,48 +158,30 @@ HTML_CONTENT = """
 async def get():
     return HTMLResponse(HTML_CONTENT)
 
-_telemetry_queue = asyncio.Queue()
-
-# We need a reference to the latest state to send to newly connected clients
-_latest_graph_state = None
-_latest_belief_state = None
-
-async def telemetry_worker():
-    global _latest_graph_state, _latest_belief_state
-    while True:
-        event = await _telemetry_queue.get()
-        if event["event"] == "GRAPH_SYNC":
-            _latest_graph_state = event
-        elif event["event"] == "BELIEF_SYNC":
-            _latest_belief_state = event
-            
-        await manager.broadcast(event)
-        _telemetry_queue.task_done()
-
-@app.websocket("/ws")
-async def websocket_endpoint(websocket: WebSocket):
-    await manager.connect(websocket)
-    # Immediately push the latest state to the new client
-    if _latest_graph_state:
-        await websocket.send_text(json.dumps(_latest_graph_state))
-    if _latest_belief_state:
-        await websocket.send_text(json.dumps(_latest_belief_state))
-        
-    try:
-        while True:
-            await websocket.receive_text()
-    except WebSocketDisconnect:
-        manager.disconnect(websocket)
-
 @app.on_event("startup")
 async def startup_event():
+    global _telemetry_queue
+    _telemetry_queue = asyncio.Queue()
     asyncio.create_task(telemetry_worker())
 
+# Global loop reference for threadsafe execution
+_server_loop = None
+
 def _run_server():
+    global _server_loop
+    # Create a fresh event loop for the uvicorn thread
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    _server_loop = loop
+    
     import logging
     log = logging.getLogger("uvicorn")
     log.setLevel(logging.CRITICAL)
-    uvicorn.run(app, host="0.0.0.0", port=8080, log_level="critical")
+    
+    # Run uvicorn on this specific loop
+    config = uvicorn.Config(app, host="0.0.0.0", port=8080, log_level="critical", loop="asyncio")
+    server = uvicorn.Server(config)
+    loop.run_until_complete(server.serve())
 
 def start_canvas_server():
     thread = threading.Thread(target=_run_server, daemon=True)
@@ -183,9 +189,12 @@ def start_canvas_server():
     return thread
 
 def emit_event(event_type: str, payload: dict):
+    global _server_loop, _telemetry_queue
+    if _server_loop is None or _telemetry_queue is None:
+        return # Server hasn't fully spun up yet
+        
     event = {"event": event_type, "payload": payload}
     try:
-        loop = asyncio.get_running_loop()
-        loop.call_soon_threadsafe(_telemetry_queue.put_nowait, event)
-    except RuntimeError:
+        _server_loop.call_soon_threadsafe(_telemetry_queue.put_nowait, event)
+    except Exception:
         pass
