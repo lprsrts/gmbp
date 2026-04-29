@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GMBP Canvas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #0f0;
+            font-family: monospace;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #cy {
+            width: 50vw;
+            height: 100vh;
+            border-right: 1px solid #0f0;
+        }
+        #panel {
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #header {
+            padding: 10px;
+            border-bottom: 1px solid #0f0;
+        }
+        #plot-container {
+            flex-grow: 1;
+            padding: 10px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="cy"></div>
+<div id="panel">
+    <div id="header">IDLE. WAITING FOR NODE SELECTION.</div>
+    <div id="plot-container"></div>
+</div>
+
+<script>
+    // Cytoscape initialization (Brutalist Geometry)
+    const cy = cytoscape({
+        container: document.getElementById('cy'),
+        style: [
+            {
+                selector: 'node[type="variable"]',
+                style: {
+                    'shape': 'ellipse',
+                    'background-color': '#000',
+                    'border-width': 2,
+                    'border-color': '#0f0',
+                    'label': 'data(name)',
+                    'color': '#0f0',
+                    'text-valign': 'top',
+                    'text-halign': 'center',
+                    'text-margin-y': -5
+                }
+            },
+            {
+                selector: 'node[type="factor"]',
+                style: {
+                    'shape': 'rectangle',
+                    'background-color': '#0f0',
+                    'width': 20,
+                    'height': 20,
+                    'label': 'data(name)',
+                    'color': '#0f0',
+                    'text-valign': 'top',
+                    'text-halign': 'center',
+                    'text-margin-y': -5
+                }
+            },
+            {
+                selector: 'node[observed="true"]',
+                style: {
+                    'background-color': '#0f0',
+                    'color': '#000'
+                }
+            },
+            {
+                selector: 'edge',
+                style: {
+                    'width': 1,
+                    'line-color': '#0f0',
+                    'curve-style': 'bezier'
+                }
+            }
+        ],
+        layout: { name: 'cose' } // Physics-based force layout
+    });
+
+    // Global state
+    let nodeBeliefs = {};
+
+    // Mathematical utility: Evaluate 1D GMM PDF
+    function evaluateGMM(x, components) {
+        let y = 0;
+        for (const comp of components) {
+            const z = (x - comp.mean) / Math.sqrt(comp.variance);
+            const pdf = Math.exp(-0.5 * z * z) / Math.sqrt(2 * Math.PI * comp.variance);
+            y += comp.weight * pdf;
+        }
+        return y;
+    }
+
+    // Render 1D Plotly graph for a variable node
+    function renderVariablePlot(nodeId, nodeName) {
+        const header = document.getElementById('header');
+        const container = document.getElementById('plot-container');
+        
+        if (!nodeBeliefs[nodeId]) {
+            header.innerText = `VARIABLE: ${nodeName} | STATUS: NO BELIEF COMPUTED`;
+            container.innerHTML = '';
+            return;
+        }
+
+        header.innerText = `VARIABLE: ${nodeName} | STATUS: MARGINAL BELIEF P(${nodeName})`;
+        const components = nodeBeliefs[nodeId];
+        
+        // Generate X axis data based on GMM spread
+        let minMean = Math.min(...components.map(c => c.mean));
+        let maxMean = Math.max(...components.map(c => c.mean));
+        let maxStd = Math.max(...components.map(c => Math.sqrt(c.variance)));
+        
+        let xStart = minMean - (3 * maxStd);
+        let xEnd = maxMean + (3 * maxStd);
+        let xSteps = 200;
+        let dx = (xEnd - xStart) / xSteps;
+        
+        let xData = [];
+        let yData = [];
+        for(let i=0; i<=xSteps; i++) {
+            let x = xStart + (i * dx);
+            xData.push(x);
+            yData.push(evaluateGMM(x, components));
+        }
+
+        const trace = {
+            x: xData,
+            y: yData,
+            type: 'scatter',
+            mode: 'lines',
+            line: {color: '#0f0', width: 2},
+            fill: 'tozeroy',
+            fillcolor: 'rgba(0, 255, 0, 0.2)'
+        };
+
+        const layout = {
+            paper_bgcolor: '#000',
+            plot_bgcolor: '#000',
+            xaxis: { color: '#0f0', gridcolor: '#333' },
+            yaxis: { color: '#0f0', gridcolor: '#333' },
+            margin: { t: 10, r: 10, b: 40, l: 40 }
+        };
+
+        Plotly.newPlot(container, [trace], layout, {displayModeBar: false});
+    }
+
+    // Interaction handling
+    cy.on('tap', 'node', function(evt){
+        const node = evt.target;
+        if (node.data('type') === 'variable') {
+            renderVariablePlot(node.id(), node.data('name'));
+        } else {
+            document.getElementById('header').innerText = `FACTOR: ${node.data('name')} | PAIRWISE PLOTS PENDING`;
+            document.getElementById('plot-container').innerHTML = '';
+        }
+    });
+
+    // WebSocket connection
+    const ws = new WebSocket(`ws://${window.location.host}/ws`);
+    
+    ws.onmessage = function(event) {
+        const msg = JSON.parse(event.data);
+        
+        if (msg.event === "GRAPH_SYNC") {
+            cy.elements().remove();
+            cy.add(msg.payload.nodes);
+            cy.add(msg.payload.edges);
+            cy.layout({ name: 'cose', animate: true, randomize: false }).run();
+        } 
+        else if (msg.event === "BELIEF_SYNC") {
+            nodeBeliefs = msg.payload;
+            
+            // If a node is currently selected, re-render its plot
+            const selected = cy.$(':selected');
+            if (selected.length > 0 && selected[0].data('type') === 'variable') {
+                renderVariablePlot(selected[0].id(), selected[0].data('name'));
+            }
+        }
+    };
+
+    ws.onclose = function() {
+        document.getElementById('header').innerText = "CONNECTION LOST. RESTART REPL.";
+    };
+</script>
+
+</body>
+</html>
