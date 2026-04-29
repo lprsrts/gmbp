@@ -110,13 +110,21 @@ HTML_CONTENT = """
         else { document.getElementById('header').innerText = `FACTOR: ${node.data('name')} | PAIRWISE PLOTS PENDING`; document.getElementById('plot-container').innerHTML = ''; }
     });
 
-    const ws = new WebSocket(`ws://${window.location.host}/ws`);
-    ws.onmessage = function(event) {
-        const msg = JSON.parse(event.data);
-        if (msg.event === "GRAPH_SYNC") { cy.elements().remove(); cy.add(msg.payload.nodes); cy.add(msg.payload.edges); cy.layout({ name: 'cose', animate: true, randomize: false }).run(); } 
-        else if (msg.event === "BELIEF_SYNC") { nodeBeliefs = msg.payload; const selected = cy.$(':selected'); if (selected.length > 0 && selected[0].data('type') === 'variable') renderVariablePlot(selected[0].id(), selected[0].data('name')); }
+    const connectWebSocket = () => {
+        const ws = new WebSocket(`ws://${window.location.host}/ws`);
+        ws.onopen = function() {
+            console.log("WebSocket connected. Requesting initial state.");
+            ws.send(JSON.stringify({command: "REQUEST_STATE"}));
+        };
+        ws.onmessage = function(event) {
+            const msg = JSON.parse(event.data);
+            if (msg.event === "GRAPH_SYNC") { cy.elements().remove(); cy.add(msg.payload.nodes); cy.add(msg.payload.edges); cy.layout({ name: 'cose', animate: true, randomize: false }).run(); } 
+            else if (msg.event === "BELIEF_SYNC") { nodeBeliefs = msg.payload; const selected = cy.$(':selected'); if (selected.length > 0 && selected[0].data('type') === 'variable') renderVariablePlot(selected[0].id(), selected[0].data('name')); }
+        };
+        ws.onclose = function() { document.getElementById('header').innerText = "CONNECTION LOST. RESTART REPL."; };
     };
-    ws.onclose = function() { document.getElementById('header').innerText = "CONNECTION LOST. RESTART REPL."; };
+
+    connectWebSocket();
 </script>
 </body>
 </html>
@@ -128,11 +136,36 @@ async def get():
 
 _telemetry_queue = asyncio.Queue()
 
+# We need a reference to the latest state to send to newly connected clients
+_latest_graph_state = None
+_latest_belief_state = None
+
 async def telemetry_worker():
+    global _latest_graph_state, _latest_belief_state
     while True:
         event = await _telemetry_queue.get()
+        if event["event"] == "GRAPH_SYNC":
+            _latest_graph_state = event
+        elif event["event"] == "BELIEF_SYNC":
+            _latest_belief_state = event
+            
         await manager.broadcast(event)
         _telemetry_queue.task_done()
+
+@app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    await manager.connect(websocket)
+    # Immediately push the latest state to the new client
+    if _latest_graph_state:
+        await websocket.send_text(json.dumps(_latest_graph_state))
+    if _latest_belief_state:
+        await websocket.send_text(json.dumps(_latest_belief_state))
+        
+    try:
+        while True:
+            await websocket.receive_text()
+    except WebSocketDisconnect:
+        manager.disconnect(websocket)
 
 @app.on_event("startup")
 async def startup_event():

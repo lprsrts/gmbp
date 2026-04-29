@@ -9,10 +9,9 @@ class Session:
         self.graph = FactorGraph()
         self.engine = BeliefPropagation(self.graph)
         self._server_thread = start_canvas_server()
-        time.sleep(0.1) # Brief pause to allow uvicorn to bind the port
+        time.sleep(0.5)  # Extended wait to ensure server is bound and ready to queue
 
     def _sync_graph(self):
-        """Sends the entire topological structure to the canvas."""
         nodes = []
         edges = []
         
@@ -29,7 +28,7 @@ class Session:
     def add_variable(self, *names):
         fluents = []
         for name in names:
-            node = self.graph.add_variable(name)
+            self.graph.add_variable(name)
             print(f"[Session] Variable added: {name}")
             fluents.append(FluentVariable(self, name))
         self._sync_graph()
@@ -55,7 +54,6 @@ class Session:
     def step(self):
         self.engine.step()
         print("[Session] Belief Propagation step completed.")
-        # After a step, beliefs have likely changed.
         self._emit_beliefs()
         
     def compute_beliefs(self):
@@ -64,11 +62,9 @@ class Session:
         self._emit_beliefs()
 
     def _emit_beliefs(self):
-        """Serializes the beliefs (means/covariances) for Plotly to render."""
         beliefs = {}
         for v_id, var in self.graph.variables.items():
             if var.belief is not None:
-                # Basic serialization of the 1D marginals for the canvas
                 comps = []
                 for w, comp in zip(var.belief.weights, var.belief.components):
                     comps.append({
