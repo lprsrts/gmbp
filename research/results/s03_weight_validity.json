@@ -1,0 +1,85 @@
+{
+ "lambda = r^2 (the note)|unnormalised product": {
+  "tau": 0.9999999999999999,
+  "top1": 1.0,
+  "regret": 1.0
+ },
+ "lambda = r^2 (the note)|normalised product": {
+  "tau": 0.9484848484848484,
+  "top1": 0.9833333333333333,
+  "regret": 1.0
+ },
+ "lambda = r^2 (the note)|normalised + marginalised": {
+  "tau": 0.8626262626262625,
+  "top1": 0.8133333333333334,
+  "regret": 1.0
+ },
+ "unweighted ISD|unnormalised product": {
+  "tau": 0.7868686868686867,
+  "top1": 0.66,
+  "regret": 1.0
+ },
+ "unweighted ISD|normalised product": {
+  "tau": 0.7717171717171717,
+  "top1": 0.67,
+  "regret": 1.0
+ },
+ "unweighted ISD|normalised + marginalised": {
+  "tau": 0.7717171717171717,
+  "top1": 0.6366666666666667,
+  "regret": 1.0
+ },
+ "Runnalls|unnormalised product": {
+  "tau": 0.7373737373737373,
+  "top1": 0.48,
+  "regret": 1.2575552351926442
+ },
+ "Runnalls|normalised product": {
+  "tau": 0.7252525252525251,
+  "top1": 0.48333333333333334,
+  "regret": 1.2836693489384419
+ },
+ "Runnalls|normalised + marginalised": {
+  "tau": 0.7626262626262625,
+  "top1": 0.52,
+  "regret": 1.0
+ },
+ "staleness": [
+  {
+   "label": "exact r",
+   "tau": 0.8707070707070707,
+   "top1": 0.855,
+   "ratio": 1.0
+  },
+  {
+   "label": "means +-0.25 sd",
+   "tau": 0.8727272727272727,
+   "top1": 0.85,
+   "ratio": 1.0
+  },
+  {
+   "label": "means +-0.5 sd",
+   "tau": 0.8646464646464646,
+   "top1": 0.845,
+   "ratio": 1.0
+  },
+  {
+   "label": "means +-1.0 sd",
+   "tau": 0.8464646464646464,
+   "top1": 0.77,
+   "ratio": 1.0
+  },
+  {
+   "label": "means +-2.0 sd",
+   "tau": 0.812121212121212,
+   "top1": 0.715,
+   "ratio": 1.0
+  },
+  {
+   "label": "resampled r",
+   "tau": 0.7343434343434343,
+   "top1": 0.6,
+   "ratio": 1.0
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+[
+ {
+  "dist": 0.0,
+  "width": 2.0,
+  "cond_median": 1111724.1029035691,
+  "cond_max": 21203341339.838367,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 5.81943598575774e-11
+ },
+ {
+  "dist": 0.0,
+  "width": 0.5,
+  "cond_median": 1639863.5077494616,
+  "cond_max": 3406805371.0177717,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 7.911029618951884e-11
+ },
+ {
+  "dist": 0.0,
+  "width": 0.1,
+  "cond_median": 108733.77870708679,
+  "cond_max": 680663748.5653969,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 3.096675486234986e-11
+ },
+ {
+  "dist": 2.0,
+  "width": 2.0,
+  "cond_median": 481676.6830976965,
+  "cond_max": 2004166500828.9004,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 6.178673399974341e-11
+ },
+ {
+  "dist": 2.0,
+  "width": 0.5,
+  "cond_median": 32200.919011456255,
+  "cond_max": 641717933.8971254,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 6.609739640107025e-12
+ },
+ {
+  "dist": 2.0,
+  "width": 0.1,
+  "cond_median": 88.34429679653354,
+  "cond_max": 6786311.878053232,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 1.3293959285589546e-13
+ },
+ {
+  "dist": 4.0,
+  "width": 2.0,
+  "cond_median": 196063.5805366672,
+  "cond_max": 2587018693.23253,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 3.183527281675915e-11
+ },
+ {
+  "dist": 4.0,
+  "width": 0.5,
+  "cond_median": 130.31050576305898,
+  "cond_max": 1108027139.725342,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 1.2272574854945236e-13
+ },
+ {
+  "dist": 4.0,
+  "width": 0.1,
+  "cond_median": 1.7018449653317538,
+  "cond_max": 1617590.4057044266,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 1.4634413759297302e-14
+ },
+ {
+  "dist": 6.0,
+  "width": 2.0,
+  "cond_median": 84586.96851422315,
+  "cond_max": 2735723552.567607,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 4.768187579945052e-11
+ },
+ {
+  "dist": 6.0,
+  "width": 0.5,
+  "cond_median": 20.267130070244868,
+  "cond_max": 1492548.2994837502,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 4.8901730693248713e-14
+ },
+ {
+  "dist": 6.0,
+  "width": 0.1,
+  "cond_median": 1.1390820048294472,
+  "cond_max": 11465203227.61202,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 1.668329570336638e-14
+ },
+ {
+  "dist": 8.0,
+  "width": 2.0,
+  "cond_median": 3619.701540696611,
+  "cond_max": 637980392.1233392,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 2.882030404492838e-12
+ },
+ {
+  "dist": 8.0,
+  "width": 0.5,
+  "cond_median": 4.54203260444383,
+  "cond_max": 9815.814837517419,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 2.1901867051455824e-14
+ },
+ {
+  "dist": 8.0,
+  "width": 0.1,
+  "cond_median": 1.0423291399128665,
+  "cond_max": 3252.925351407227,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 2.1092524119949426e-14
+ },
+ {
+  "dist": 10.0,
+  "width": 2.0,
+  "cond_median": 1843.9437983530597,
+  "cond_max": 527868899.832649,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 2.3579641843857532e-12
+ },
+ {
+  "dist": 10.0,
+  "width": 0.5,
+  "cond_median": 2.3715839229873543,
+  "cond_max": 65481328.14230155,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 1.4465791794087084e-14
+ },
+ {
+  "dist": 10.0,
+  "width": 0.1,
+  "cond_median": 1.0008735979677776,
+  "cond_max": 1088.25969674251,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 2.9545131528368366e-14
+ },
+ {
+  "dist": 12.0,
+  "width": 2.0,
+  "cond_median": 566.9457582994746,
+  "cond_max": 223277538.88272005,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 7.371623149703448e-13
+ },
+ {
+  "dist": 12.0,
+  "width": 0.5,
+  "cond_median": 1.3608766038083393,
+  "cond_max": 150615.8311628092,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 1.613330575371941e-14
+ },
+ {
+  "dist": 12.0,
+  "width": 0.1,
+  "cond_median": 1.00000346480118,
+  "cond_max": 4553.203358715487,
+  "flip_rate": 0.0,
+  "argmin_wrong_vs_exact": 0.0,
+  "relerr_median": 2.958768386597198e-14
+ }
+]

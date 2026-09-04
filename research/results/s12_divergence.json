@@ -1,0 +1,26 @@
+[
+ {
+  "name": "note's graph, medium obs",
+  "events": 468,
+  "diff_uniform": 0.45726495726495725,
+  "diff_runnalls": 0.5534188034188035,
+  "kendall": 0.8682999179686761,
+  "lambda_range": 6688.98633560145
+ },
+ {
+  "name": "note's graph, no obs",
+  "events": 468,
+  "diff_uniform": 0.4337606837606838,
+  "diff_runnalls": 0.5448717948717948,
+  "kendall": 0.8980183063468692,
+  "lambda_range": 4274.648858536099
+ },
+ {
+  "name": "chain, both ends observed",
+  "events": 360,
+  "diff_uniform": 0.2916666666666667,
+  "diff_runnalls": 0.5361111111111111,
+  "kendall": 0.9141610650898577,
+  "lambda_range": 9.47972412625748
+ }
+]

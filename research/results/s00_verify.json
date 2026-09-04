@@ -1,0 +1,8 @@
+{
+ "closed_form_median": 1.9840418578318926e-16,
+ "closed_form_max": 6.970222963218609e-15,
+ "fast_vs_general_max": 6.290572594567997e-09,
+ "eq18_max": 9.225506285435025e-08,
+ "tree_class": 8.438993479026324e-05,
+ "tree_sensor": 0.0
+}

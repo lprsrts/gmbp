@@ -1,0 +1,564 @@
+{
+ "rows": [
+  {
+   "seed": 1,
+   "t0": 1,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 1,
+   "t0": 1,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 1,
+   "t0": 1,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 1,
+   "t0": 2,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 1,
+   "t0": 2,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 1,
+   "t0": 2,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 1,
+   "t0": 3,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 1,
+   "t0": 3,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 1,
+   "t0": 3,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 2,
+   "t0": 1,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 2,
+   "t0": 1,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 2,
+   "t0": 1,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 2,
+   "t0": 2,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 2,
+   "t0": 2,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 2,
+   "t0": 2,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 2,
+   "t0": 3,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 2,
+   "t0": 3,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 2,
+   "t0": 3,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 3,
+   "t0": 1,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 3,
+   "t0": 1,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 3,
+   "t0": 1,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 3,
+   "t0": 2,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 3,
+   "t0": 2,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 3,
+   "t0": 2,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 3,
+   "t0": 3,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 3,
+   "t0": 3,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 3,
+   "t0": 3,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 4,
+   "t0": 1,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 4,
+   "t0": 1,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 4,
+   "t0": 1,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 4,
+   "t0": 2,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 4,
+   "t0": 2,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 4,
+   "t0": 2,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 4,
+   "t0": 3,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 4,
+   "t0": 3,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 4,
+   "t0": 3,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 5,
+   "t0": 1,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 5,
+   "t0": 1,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 5,
+   "t0": 1,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 5,
+   "t0": 2,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 5,
+   "t0": 2,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 5,
+   "t0": 2,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 5,
+   "t0": 3,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 5,
+   "t0": 3,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 5,
+   "t0": 3,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 6,
+   "t0": 1,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 6,
+   "t0": 1,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 6,
+   "t0": 1,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 6,
+   "t0": 2,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 6,
+   "t0": 2,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 6,
+   "t0": 2,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 6,
+   "t0": 3,
+   "criterion": "lambda = r^2",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 6,
+   "t0": 3,
+   "criterion": "unweighted ISD",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  },
+  {
+   "seed": 6,
+   "t0": 3,
+   "criterion": "Runnalls",
+   "kendall": NaN,
+   "chosen_percentile": 1.0,
+   "excess_over_best": 0.0,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.0
+  }
+ ],
+ "summary": {
+  "lambda = r^2": {
+   "tau_median": NaN,
+   "tau_mean": NaN,
+   "pct_median": 1.0,
+   "excess_median": 0.0
+  },
+  "unweighted ISD": {
+   "tau_median": NaN,
+   "tau_mean": NaN,
+   "pct_median": 1.0,
+   "excess_median": 0.0
+  },
+  "Runnalls": {
+   "tau_median": NaN,
+   "tau_mean": NaN,
+   "pct_median": 1.0,
+   "excess_median": 0.0
+  }
+ }
+}
