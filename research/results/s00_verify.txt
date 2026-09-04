@@ -1,0 +1,9 @@
+S0  Verification
+    weighted ISD closed form vs quadrature : median 1.98e-16  max 6.97e-15
+    vectorised 1D core vs general oracle    : median 5.92e-13  max 6.29e-09
+    Eq. 18  int(pr-qr)^2 = int r^2 (p-q)^2  : median 5.01e-15  max 9.23e-08
+    BP on a tree vs exact posterior, as the improper-prior stand-in widens:
+        flat prior variance    1e+04 -> class max-abs 8.44e-05, sensor TV 0.00e+00
+        flat prior variance    1e+06 -> class max-abs 8.44e-07, sensor TV 0.00e+00
+        flat prior variance    1e+08 -> class max-abs 8.44e-09, sensor TV 0.00e+00
+        flat prior variance    1e+10 -> class max-abs 8.44e-11, sensor TV 0.00e+00

@@ -1,0 +1,30 @@
+S6  The reactivation threshold has no fixed scale
+
+    lambda normalised by raw    rho: p1 7.753e-21  median 3.777e-05  p99 2.335e-02   dynamic range 3.0e+18
+      fraction of reserve above tau: 1e-06:72%  1e-04:42%  1e-02:2%  1e-01:0%  1e+00:0%  1e+01:0%
+
+    lambda normalised by mass   rho: p1 4.321e-22  median 4.971e-04  p99 1.129e-01   dynamic range 2.6e+20
+      fraction of reserve above tau: 1e-06:77%  1e-04:62%  1e-02:23%  1e-01:1%  1e+00:0%  1e+01:0%
+
+    lambda normalised by peak   rho: p1 2.364e-21  median 1.002e-02  p99 8.748e+02   dynamic range 3.7e+23
+      fraction of reserve above tau: 1e-06:85%  1e-04:74%  1e-02:50%  1e-01:32%  1e+00:13%  1e+01:8%
+
+    Every reduction decision is invariant to these rescalings;
+    the reactivation rule is not.
+
+    Does one tau transfer between graphs? (lambda normalised by peak)
+      seed 1: 1e-06:85%  1e-04:74%  1e-02:50%  1e-01:32%  1e+00:13%  1e+01:8%
+      seed 2: 1e-06:76%  1e-04:63%  1e-02:33%  1e-01:16%  1e+00:3%  1e+01:1%
+      seed 3: 1e-06:74%  1e-04:61%  1e-02:37%  1e-01:18%  1e+00:7%  1e+01:1%
+      seed 4: 1e-06:78%  1e-04:68%  1e-02:48%  1e-01:25%  1e+00:7%  1e+01:2%
+      seed 5: 1e-06:80%  1e-04:69%  1e-02:49%  1e-01:22%  1e+00:12%  1e+01:8%
+
+    reserve size over 6 sweeps (single graph, cap 200/edge): [48, 456, 864, 1272, 1680, 2088]
+
+    Does reactivation improve the answer at all?
+      no reserve       mean TV gap to reference 0.00394
+      tau = 1e-04      mean TV gap to reference 0.09536
+      tau = 1e-03      mean TV gap to reference 0.09686
+      tau = 1e-02      mean TV gap to reference 0.08974
+      tau = 1e-01      mean TV gap to reference 0.10311
+      tau = 1e+00      mean TV gap to reference 0.02004

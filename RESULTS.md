@@ -188,8 +188,8 @@ Measured on a chain of length 8, capping λ to 6 components at every step:
 | depth | λ width (sd) | components before the cap | uncapped count | share of the message λ can see |
 |---|---|---|---|---|
 | 1 | 1.638 | 1600 | 1.6e3 | 85.9% |
-| 2 | 1.000 | 9600 | 2.6e6 | 66.5% |
-| 4 | 0.553 | 9600 | 6.6e12 | 44.9% |
+| 2 | 1.000 | 9600 | 2.6e6 | 65.3% |
+| 4 | 0.519 | 9600 | 6.6e12 | 44.9% |
 | 6 | 0.390 | 4374 | 7.6e18 | 45.3% |
 | 8 | 0.321 | 54 | 5.6e21 | 35.4% |
 
@@ -217,20 +217,22 @@ consecutive sweeps at the end:
 |---|---|---|
 | unreduced reference | 6.8e-06 | — |
 | Runnalls, budget 6 | 6.6e-06 | — |
-| adaptive, α = 0.1 | 1.0e-05 | 6.8e-03 |
-| adaptive, α = 0.25 | 7.3e-06 | 4.9e-03 |
-| adaptive, α = 0.5 | 1.3e-05 | 1.9e-03 |
-| adaptive, α = 0.75 | 1.4e-04 | 1.7e-03 |
-| adaptive, α = 1.0 | 7.5e-06 | 1.0e-05 |
+| adaptive, α = 0.1 | 1.0e-05 | 9.6e-03 |
+| adaptive, α = 0.25 | 5.2e-05 | 7.9e-03 |
+| adaptive, α = 0.5 | 1.3e-05 | 4.0e-03 |
+| adaptive, α = 0.75 | 1.4e-04 | 2.5e-03 |
+| adaptive, α = 1.0 | 8.5e-06 | 1.6e-05 |
 
 No instability at any α. The residual motion is within an order of magnitude
 of the unreduced reference's own.
 
 The interesting column is the second one. **Damping does not stabilise
 anything here; it just stops the relevance from converging.** At α = 1, which
-is no damping at all, the relevance settles to 1.0e-05. At α = 0.1 it is
-still moving by 6.8e-03 after twenty sweeps, two and a half orders of
-magnitude more, and the beliefs are no better for it. On this graph α is a
+is no damping at all, the relevance settles to 1.6e-05. At α = 0.1 it is
+still moving by 9.6e-03 after twenty sweeps, nearly three orders of magnitude
+more, and the beliefs are no better for it — the relevance-motion column is
+monotone in α, so every step of extra damping buys a slower-converging
+relevance and nothing else. On this graph α is a
 parameter with a cost and no benefit.
 
 ## S6 — τ_react is a threshold on a quantity with no scale
@@ -242,17 +244,26 @@ constant, and **every reduction decision is invariant to rescaling λ while ρ
 is not**. Rescaling is not a hypothetical: any implementation must pick a
 normalisation for λ, and the note does not specify one.
 
-| λ normalised by | ρ p1 | ρ median | ρ p99 | dynamic range | fraction above τ = 1 |
-|---|---|---|---|---|---|
-| nothing | 4.7e-20 | 2.6e-04 | 5.7e-02 | 1.2e18 | 0% |
-| its mass | 8.8e-22 | 5.4e-04 | 1.1e-01 | 1.2e20 | 0% |
-| its peak | 5.1e-21 | 9.3e-03 | 8.7e+02 | 1.7e23 | 13% |
+| λ normalised by | ρ p1 | ρ median | ρ p99 | dynamic range | fraction above τ = 0.01 | above τ = 1 |
+|---|---|---|---|---|---|---|
+| nothing | 7.8e-21 | 3.8e-05 | 2.3e-02 | 3.0e18 | 2% | 0% |
+| its mass | 4.3e-22 | 5.0e-04 | 1.1e-01 | 2.6e20 | 23% | 0% |
+| its peak | 2.4e-21 | 1.0e-02 | 8.7e+02 | 3.7e23 | 50% | 13% |
 
-Nor does one τ transfer between problems. At τ = 1, with λ peak-normalised,
-the fraction of the reserve eligible for reactivation across five seeds of the
-*same graph family* is 13%, 1%, 5%, 7%, 4%. The reserve itself grows without
-bound: 48, 456, 864, 1272, 1680, 2088 stored components over six sweeps, and
-scoring every one of them against λ on every sweep is the cost of keeping it.
+Read the τ = 0.01 column. The same threshold reactivates 2%, 23% or 50% of
+the reserve depending only on a normalisation that provably cannot change a
+single merge decision — a 25-fold swing driven by a choice the note leaves
+open. The τ = 1 column is worse in kind: two of the three conventions put the
+entire reserve below it, so the mechanism silently switches off.
+
+Nor does one τ transfer between problems. At τ = 1, peak-normalised, the
+eligible fraction across five seeds of the *same graph family* is 13%, 3%,
+7%, 7%, 12% — a fourfold spread from the seed alone, before any change of
+graph.
+
+The reserve itself grows without bound: 48, 456, 864, 1272, 1680, 2088 stored
+components over six sweeps, and scoring every one against λ on every sweep is
+the cost of keeping it.
 
 ## S8 — The reserve set and reactivation: the part that breaks
 

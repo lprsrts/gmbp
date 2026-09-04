@@ -1,0 +1,31 @@
+S1  Cancellation in the weighted ISD merge criterion
+    cond = sum|terms| / |result|;  usable digits ~ 16 - log10(cond)
+    selected (cheapest) pair : median 2.275e+05   p90 5.802e+07   max 3.667e+14
+    typical pair             : median 2.265e+01
+    digits left on the selected pair: median 10.6, worst 1.4
+    argmin flips under a 1e-13 relative jitter: weighted ISD 0.0%, Runnalls 0.0%
+    vs 60-digit exact: argmin agrees 100%; rel err on the winning cost median 1.15e-12 max 1.47e-08
+
+S1b Relevance placed away from the mixture (the intended use case)
+    lam offset  width   cond(median)   cond(max)   argmin wrong vs exact   rel err
+          0.0   2.00     1.11e+06    2.12e+10         0.0%            5.8e-11
+          0.0   0.50     1.64e+06    3.41e+09         0.0%            7.9e-11
+          0.0   0.10     1.09e+05    6.81e+08         0.0%            3.1e-11
+          2.0   2.00     4.82e+05    2.00e+12         0.0%            6.2e-11
+          2.0   0.50     3.22e+04    6.42e+08         0.0%            6.6e-12
+          2.0   0.10     8.83e+01    6.79e+06         0.0%            1.3e-13
+          4.0   2.00     1.96e+05    2.59e+09         0.0%            3.2e-11
+          4.0   0.50     1.30e+02    1.11e+09         0.0%            1.2e-13
+          4.0   0.10     1.70e+00    1.62e+06         0.0%            1.5e-14
+          6.0   2.00     8.46e+04    2.74e+09         0.0%            4.8e-11
+          6.0   0.50     2.03e+01    1.49e+06         0.0%            4.9e-14
+          6.0   0.10     1.14e+00    1.15e+10         0.0%            1.7e-14
+          8.0   2.00     3.62e+03    6.38e+08         0.0%            2.9e-12
+          8.0   0.50     4.54e+00    9.82e+03         0.0%            2.2e-14
+          8.0   0.10     1.04e+00    3.25e+03         0.0%            2.1e-14
+         10.0   2.00     1.84e+03    5.28e+08         0.0%            2.4e-12
+         10.0   0.50     2.37e+00    6.55e+07         0.0%            1.4e-14
+         10.0   0.10     1.00e+00    1.09e+03         0.0%            3.0e-14
+         12.0   2.00     5.67e+02    2.23e+08         0.0%            7.4e-13
+         12.0   0.50     1.36e+00    1.51e+05         0.0%            1.6e-14
+         12.0   0.10     1.00e+00    4.55e+03         0.0%            3.0e-14

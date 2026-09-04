@@ -1,0 +1,9 @@
+S12 Does the relevance change the merge that gets chosen?
+
+    graph                         events picks differ from plain ISD      differ from Runnalls  Kendall vs ISD      lambda range
+    note's graph, medium obs         468                         46%                       55%           0.868            6689.0
+    note's graph, no obs             468                         43%                       54%           0.898            4274.6
+    chain, both ends observed        360                         29%                       54%           0.914               9.5
+
+    'lambda range' is max/min of lambda evaluated at the component means:
+    1.0 would mean the weighted criterion is exactly the unweighted one.

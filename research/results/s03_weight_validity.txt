@@ -1,0 +1,20 @@
+S3  Does lambda = r^2 rank merges by the damage they actually do downstream?
+    300 random mixtures; Kendall tau / top-1 hit rate / cost ratio of the merge chosen vs the best one
+
+    criterion                             unnormalised product              normalised product       normalised + marginalised
+    lambda = r^2 (the note)           1.000   100%        1.00x        0.948    98%        1.00x        0.863    81%        1.00x
+    unweighted ISD                    0.787    66%        1.00x        0.772    67%        1.00x        0.772    64%        1.00x
+    Runnalls                          0.737    48%        1.26x        0.725    48%        1.28x        0.763    52%        1.00x
+
+    (tau 1.0 and top-1 100% on the first column is the identity of Eq. 18,
+     recovered numerically. The other two columns are what BP actually does.)
+
+    Relevance is always stale in a loopy graph. Perturbing r before
+    squaring it, then scoring against the true downstream damage:
+    r perturbation               tau    top-1   chosen/best
+    exact r                    0.871     86%         1.00x
+    means +-0.25 sd            0.873     85%         1.00x
+    means +-0.5 sd             0.865     84%         1.00x
+    means +-1.0 sd             0.846     77%         1.00x
+    means +-2.0 sd             0.812     72%         1.00x
+    resampled r                0.734     60%         1.00x

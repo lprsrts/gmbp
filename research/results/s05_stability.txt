@@ -1,0 +1,10 @@
+S5  Stability of the coupled belief-relevance iteration, 20 sweeps
+    'motion' = mean TV between consecutive sweeps over the last 6 sweeps
+
+    unreduced reference          motion 6.845e-06
+    Runnalls, budget 6           motion 6.570e-06
+    adaptive, alpha = 0.1          motion 1.037e-05   relevance still moving 9.636e-03
+    adaptive, alpha = 0.25         motion 5.228e-05   relevance still moving 7.931e-03
+    adaptive, alpha = 0.5          motion 1.341e-05   relevance still moving 3.950e-03
+    adaptive, alpha = 0.75         motion 1.385e-04   relevance still moving 2.450e-03
+    adaptive, alpha = 1.0          motion 8.517e-06   relevance still moving 1.575e-05

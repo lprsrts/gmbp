@@ -1,0 +1,17 @@
+S10 Backward relevance recursion on a chain, K = 8
+    lambda_k = prod_{l>k} r_l^2, capped to 6 components at every step
+
+     depth   lambda width (sd)   components before cap    uncapped count  message mass lambda sees
+         1              1.6384                    1600           1.6e+03                    85.9%
+         2              1.0001                    9600          2.56e+06                    65.3%
+         3              0.7495                    9600           4.1e+09                    58.3%
+         4              0.5186                    9600          6.55e+12                    44.9%
+         5              0.4531                    9600          1.05e+16                    40.5%
+         6              0.3902                    4374          7.64e+18                    45.3%
+         7              0.3457                     486          6.19e+20                    46.7%
+         8              0.3212                      54          5.57e+21                    35.4%
+
+    'message mass lambda sees' is the fraction of the message lying where
+    lambda is above 1% of its peak. Outside it the weighted criterion is
+    ranking merges by numbers that are near zero, and S1c shows what
+    happens to the ranking once they underflow.
