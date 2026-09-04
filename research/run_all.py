@@ -7,7 +7,8 @@ ORDER = ["s00_verify", "s01_conditioning", "s01c_underflow",
          "s02_relevance_blowup", "s03_weight_validity",
          "s04_principal_hypothesis", "s05_stability", "s06_reserve",
          "s07_oracle_regret", "s08_irreversibility", "s09_chain",
-         "s10_backward_recursion"]
+         "s10_backward_recursion", "s11_controls",
+         "s12_decision_divergence", "s13_simplified"]
 
 if __name__ == "__main__":
     py = sys.argv[1] if len(sys.argv) > 1 else sys.executable

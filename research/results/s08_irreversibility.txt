@@ -1,0 +1,25 @@
+S8a Delete one distant low-weight component; no reduction anywhere else.
+    Does the belief recover on later sweeps?
+
+    seed  edge                     weight   TV to reference, sweep of deletion onward
+    1     f_C2_S2->S2              0.1284   0.05368  0.00000  0.00308  0.00231  0.00005  0.00017  0.00001
+    2     f_S3_S4->S3              0.1835   0.07434  0.00000  0.00575  0.00000  0.00019  0.00007  0.00003
+    3     f_C1_S1->S1              0.0921   0.18272  0.00000  0.17477  0.09189  0.00620  0.00675  0.00234
+    4     f_C3_S2->S2              0.1468   0.07530  0.00000  0.02252  0.01679  0.00025  0.00433  0.00003
+    5     f_C2_S4->S4              0.1493   0.05802  0.04766  0.00000  0.00257  0.00000  0.00061  0.00034
+
+    final TV as a fraction of the TV right after deletion: median 0.000
+
+S8b Does the reserve earn its cost, as written and repaired?
+
+    variant                     mean TV gap  x no-reserve  reactivations
+    no reserve                      0.00394         1.00x              0
+    as written, tau=0.01            0.08974        22.78x           1202
+    repaired,   tau=0.01            0.02120         5.38x            118
+    as written, tau=0.1             0.10311        26.18x            645
+    repaired,   tau=0.1             0.00807         2.05x             20
+    as written, tau=1               0.02004         5.09x            221
+    repaired,   tau=1               0.00479         1.22x              4
+    relative,   k=1                 0.02311         5.87x            114
+    relative,   k=3                 0.01893         4.81x             68
+    relative,   k=10                0.01349         3.43x             45

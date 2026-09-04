@@ -1,0 +1,18 @@
+S2  Relevance blow-up
+    downstream product r has 1-36 components
+    lambda = r^2 before any cap: median 1299, max 1302 components
+    the note's Algorithm 1 caps the message at 6 and says nothing about capping lambda
+
+    cost of capping lambda to 6 (weight-prune to 40, then merge):
+      Kendall tau between merge orders under exact and capped lambda: median 1.000, p10 1.000, min 0.962
+      the merge actually chosen is the same in 100% of reductions
+
+    drift of the relevance peak from the message it weights:
+      median 0.33 message-sigmas, p90 1.05, max 1.29
+      (S1c puts the underflow cliff near 20 sigmas for a narrow lambda)
+
+    seed 1: pair-cost evaluations  Runnalls 236,130   adaptive 2,146,012   ratio 9.1x
+
+    seed 2: pair-cost evaluations  Runnalls 236,130   adaptive 2,146,012   ratio 9.1x
+
+    seed 3: pair-cost evaluations  Runnalls 236,130   adaptive 2,146,012   ratio 9.1x

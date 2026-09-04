@@ -5,30 +5,30 @@
    "t0": 1,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5619047619047619,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.0006348854616027203,
+   "spread": 0.02849812330234607
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4952380952380953,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.0006348854616027203,
+   "spread": 0.02849812330234607
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.43809523809523815,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.0006348854616027203,
+   "spread": 0.02849812330234607
   },
   {
    "seed": 1,
@@ -65,210 +65,210 @@
    "t0": 1,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5238095238095238,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.00212359415306592,
+   "spread": 0.006440498539929422
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.43809523809523815,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.00212359415306592,
+   "spread": 0.006440498539929422
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4190476190476191,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.00212359415306592,
+   "spread": 0.006440498539929422
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3142857142857143,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.03442027572952066,
+   "spread": 0.0004611260226694636
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.20952380952380956,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.03442027572952066,
+   "spread": 0.0004611260226694636
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.13333333333333333,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.03442027572952066,
+   "spread": 0.0004611260226694636
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.01504315266038733,
+   "spread": 0.0011883785780100109
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.33333333333333337,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.01504315266038733,
+   "spread": 0.0011883785780100109
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.29523809523809524,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.01504315266038733,
+   "spread": 0.0011883785780100109
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.40952380952380957,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.010582488894916496,
+   "spread": 0.00032642221992990397
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.36190476190476195,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.010582488894916496,
+   "spread": 0.00032642221992990397
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3238095238095238,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.010582488894916496,
+   "spread": 0.00032642221992990397
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3523809523809524,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.047180490301213275,
+   "spread": 6.769836548122226e-05
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.047180490301213275,
+   "spread": 6.769836548122226e-05
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.24761904761904766,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.047180490301213275,
+   "spread": 6.769836548122226e-05
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 7,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.2761904761904762,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.8533389937497964,
+   "spread": 1.1206917106881906e-05
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 7,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.20952380952380956,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.8533389937497964,
+   "spread": 1.1206917106881906e-05
   },
   {
    "seed": 1,
    "t0": 1,
    "horizon": 7,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.17142857142857143,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.8533389937497964,
+   "spread": 1.1206917106881906e-05
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5619047619047619,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0005877968514395262,
+   "spread": 0.02849094015156197
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5142857142857143,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0005877968514395262,
+   "spread": 0.02849094015156197
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.43809523809523815,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0005877968514395262,
+   "spread": 0.02849094015156197
   },
   {
    "seed": 1,
@@ -305,180 +305,180 @@
    "t0": 2,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4571428571428572,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.010838547974744608,
+   "spread": 0.006789358154396647
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.37142857142857144,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.010838547974744608,
+   "spread": 0.006789358154396647
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3523809523809524,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.010838547974744608,
+   "spread": 0.006789358154396647
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.20952380952380956,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.06996592763974502,
+   "spread": 0.0004085923946749127
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1619047619047619,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.06996592763974502,
+   "spread": 0.0004085923946749127
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.08571428571428572,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.06996592763974502,
+   "spread": 0.0004085923946749127
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.39047619047619053,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.017011004828121287,
+   "spread": 0.0010946254738220494
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3238095238095238,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.017011004828121287,
+   "spread": 0.0010946254738220494
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.017011004828121287,
+   "spread": 0.0010946254738220494
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.39047619047619053,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.010773029148342605,
+   "spread": 0.00032425332943256894
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.34285714285714286,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.010773029148342605,
+   "spread": 0.00032425332943256894
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3047619047619048,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.010773029148342605,
+   "spread": 0.00032425332943256894
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.34285714285714286,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.051285984780551255,
+   "spread": 6.075714808949969e-05
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2761904761904762,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.051285984780551255,
+   "spread": 6.075714808949969e-05
   },
   {
    "seed": 1,
    "t0": 2,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2380952380952381,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.051285984780551255,
+   "spread": 6.075714808949969e-05
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5428571428571428,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.00042870510728883806,
+   "spread": 0.027377061271101205
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.43809523809523815,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.00042870510728883806,
+   "spread": 0.027377061271101205
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.40952380952380957,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.00042870510728883806,
+   "spread": 0.027377061271101205
   },
   {
    "seed": 1,
@@ -515,150 +515,150 @@
    "t0": 3,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4571428571428572,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.019073094511505642,
+   "spread": 0.0070083415305719245
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.33333333333333337,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.019073094511505642,
+   "spread": 0.0070083415305719245
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3238095238095238,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.019073094511505642,
+   "spread": 0.0070083415305719245
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1619047619047619,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.0677278610677691,
+   "spread": 0.0004197192336959435
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1142857142857143,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.0677278610677691,
+   "spread": 0.0004197192336959435
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.06666666666666667,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.0677278610677691,
+   "spread": 0.0004197192336959435
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.40952380952380957,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.018503212071870723,
+   "spread": 0.0012135276797113409
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.018503212071870723,
+   "spread": 0.0012135276797113409
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2761904761904762,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.018503212071870723,
+   "spread": 0.0012135276797113409
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4952380952380953,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.012896929886646823,
+   "spread": 0.0003668262296404952
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.37142857142857144,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.012896929886646823,
+   "spread": 0.0003668262296404952
   },
   {
    "seed": 1,
    "t0": 3,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.36190476190476195,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.012896929886646823,
+   "spread": 0.0003668262296404952
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.7047619047619048,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.020824561054197492,
+   "spread": 0.03645768979567624
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.34285714285714286,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0006352082301078547,
+   "spread": 0.03645768979567624
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.380952380952381,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0006352082301078547,
+   "spread": 0.03645768979567624
   },
   {
    "seed": 2,
@@ -695,210 +695,210 @@
    "t0": 1,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.7238095238095239,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.0206931621587981,
+   "spread": 0.007896975593546941
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5142857142857143,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.015529381732030938,
+   "spread": 0.007896975593546941
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5523809523809524,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.015529381732030938,
+   "spread": 0.007896975593546941
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.6571428571428571,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.001642688084998427,
+   "spread": 0.0010582835683397287
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3142857142857143,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.009425693786189453,
+   "spread": 0.0010582835683397287
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3523809523809524,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.009425693786189453,
+   "spread": 0.0010582835683397287
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4285714285714286,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.0506927189449625,
+   "spread": 0.003315880843309126
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2571428571428572,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.04948120383542447,
+   "spread": 0.003315880843309126
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.29523809523809524,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.04948120383542447,
+   "spread": 0.003315880843309126
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5428571428571428,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.0814618057720458,
+   "spread": 0.0007056540871397459
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3523809523809524,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.07842719751816773,
+   "spread": 0.0007056540871397459
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.39047619047619053,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.07842719751816773,
+   "spread": 0.0007056540871397459
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3523809523809524,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.04427737695297639,
+   "spread": 4.93854837143445e-05
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1619047619047619,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.0431635762718633,
+   "spread": 4.93854837143445e-05
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.0431635762718633,
+   "spread": 4.93854837143445e-05
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 7,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.39047619047619053,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.1610968973665395,
+   "spread": 1.6935866765193514e-05
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 7,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2761904761904762,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.1548163260779678,
+   "spread": 1.6935866765193514e-05
   },
   {
    "seed": 2,
    "t0": 1,
    "horizon": 7,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.33333333333333337,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.1548163260779678,
+   "spread": 1.6935866765193514e-05
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.761904761904762,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.006893563261161373,
+   "spread": 0.03964088816056805
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.03964088816056805
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4571428571428572,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.03964088816056805
   },
   {
    "seed": 2,
@@ -935,180 +935,180 @@
    "t0": 2,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.6285714285714286,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.01428462367443766,
+   "spread": 0.0011342942220997068
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.027870301957303244,
+   "spread": 0.0011342942220997068
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3238095238095238,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.027870301957303244,
+   "spread": 0.0011342942220997068
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4571428571428572,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.07947623065193986,
+   "spread": 0.0005551498165663094
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.09306840633110296,
+   "spread": 0.0005551498165663094
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.34285714285714286,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.09306840633110296,
+   "spread": 0.0005551498165663094
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.028571428571428574,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.42215697024388094,
+   "spread": 0.00015542002552493836
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.18095238095238098,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.4311156890031695,
+   "spread": 0.00015542002552493836
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.18095238095238098,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.4311156890031695,
+   "spread": 0.00015542002552493836
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.47619047619047616,
+   "excess_frac_of_spread": 0.46086191816067373,
+   "spread": 7.071283645830248e-05
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1142857142857143,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.44308310755906666,
+   "spread": 7.071283645830248e-05
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1523809523809524,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.44308310755906666,
+   "spread": 7.071283645830248e-05
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.21904761904761907,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.33910480993911546,
+   "spread": 4.086904166013261e-06
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.18095238095238098,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.3464942287010268,
+   "spread": 4.086904166013261e-06
   },
   {
    "seed": 2,
    "t0": 2,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.2,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.3464942287010268,
+   "spread": 4.086904166013261e-06
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.6761904761904762,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.006166070586800261,
+   "spread": 0.03655836545057569
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2571428571428572,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.07630809717074014,
+   "spread": 0.03655836545057569
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2380952380952381,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.07630809717074014,
+   "spread": 0.03655836545057569
   },
   {
    "seed": 2,
@@ -1145,150 +1145,150 @@
    "t0": 3,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.6285714285714286,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.0028032078336306006,
+   "spread": 0.0017247497807615
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3047619047619048,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.0077873548285503896,
+   "spread": 0.0017247497807615
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.0077873548285503896,
+   "spread": 0.0017247497807615
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5428571428571428,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.01474368248829792,
+   "spread": 0.0008376635442693737
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2571428571428572,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.014607446643917978,
+   "spread": 0.0008376635442693737
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2571428571428572,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.014607446643917978,
+   "spread": 0.0008376635442693737
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1523809523809524,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.44002670813845357,
+   "spread": 0.00018040777993016564
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.13333333333333333,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.46725419438075166,
+   "spread": 0.00018040777993016564
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1904761904761905,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.46725419438075166,
+   "spread": 0.00018040777993016564
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.01904761904761905,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.4446517531902721,
+   "spread": 0.00012148226622127551
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.0380952380952381,
+   "chosen_percentile": 0.5238095238095238,
+   "excess_frac_of_spread": 0.4381015477437227,
+   "spread": 0.00012148226622127551
   },
   {
    "seed": 2,
    "t0": 3,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.05714285714285715,
+   "chosen_percentile": 0.5238095238095238,
+   "excess_frac_of_spread": 0.4381015477437227,
+   "spread": 0.00012148226622127551
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8190476190476191,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 9.916569663777495e-05,
+   "spread": 0.058118702395464635
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.39047619047619053,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 9.916569663777495e-05,
+   "spread": 0.058118702395464635
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.37142857142857144,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 9.916569663777495e-05,
+   "spread": 0.058118702395464635
   },
   {
    "seed": 3,
@@ -1325,210 +1325,210 @@
    "t0": 1,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4952380952380953,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.024202116789686413,
+   "spread": 0.012587789672673672
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.024202116789686413,
+   "spread": 0.012587789672673672
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.21904761904761907,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.024202116789686413,
+   "spread": 0.012587789672673672
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.29523809523809524,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.036690083312163294,
+   "spread": 0.007042457664147257
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.13333333333333333,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.036690083312163294,
+   "spread": 0.007042457664147257
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1523809523809524,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.036690083312163294,
+   "spread": 0.007042457664147257
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5523809523809524,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.025532237615931635,
+   "spread": 0.0018696190091204675
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.14285714285714285,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.025532237615931635,
+   "spread": 0.0018696190091204675
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.12380952380952383,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.025532237615931635,
+   "spread": 0.0018696190091204675
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3523809523809524,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.020155423806479375,
+   "spread": 0.0009860739869205675
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1142857142857143,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.020155423806479375,
+   "spread": 0.0009860739869205675
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.13333333333333333,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.020155423806479375,
+   "spread": 0.0009860739869205675
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.36190476190476195,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.05748649954044099,
+   "spread": 5.5299802403738696e-05
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.04761904761904762,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.05748649954044099,
+   "spread": 5.5299802403738696e-05
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.04761904761904762,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.05748649954044099,
+   "spread": 5.5299802403738696e-05
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 7,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1523809523809524,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.31891727685047416,
+   "spread": 9.368178016950157e-05
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 7,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.009523809523809525,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.31891727685047416,
+   "spread": 9.368178016950157e-05
   },
   {
    "seed": 3,
    "t0": 1,
    "horizon": 7,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.04761904761904762,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.31891727685047416,
+   "spread": 9.368178016950157e-05
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8190476190476191,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 9.901356629583693e-05,
+   "spread": 0.058116050623230976
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.39047619047619053,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 9.901356629583693e-05,
+   "spread": 0.058116050623230976
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.37142857142857144,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 9.901356629583693e-05,
+   "spread": 0.058116050623230976
   },
   {
    "seed": 3,
@@ -1565,180 +1565,180 @@
    "t0": 2,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.7238095238095239,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 3.9007249976657295e-05,
+   "spread": 0.014736469083138751
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3142857142857143,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 3.9007249976657295e-05,
+   "spread": 0.014736469083138751
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3142857142857143,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 3.9007249976657295e-05,
+   "spread": 0.014736469083138751
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.6857142857142857,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 6.886978230258614e-05,
+   "spread": 0.0083227448876943
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2761904761904762,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 6.886978230258614e-05,
+   "spread": 0.0083227448876943
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2761904761904762,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 6.886978230258614e-05,
+   "spread": 0.0083227448876943
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.43809523809523815,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.03035670603201143,
+   "spread": 0.001805132712278001
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.14285714285714285,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.03035670603201143,
+   "spread": 0.001805132712278001
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.12380952380952383,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.03035670603201143,
+   "spread": 0.001805132712278001
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.028571428571428574,
+   "chosen_percentile": 0.7619047619047619,
+   "excess_frac_of_spread": 0.019823844294698714,
+   "spread": 0.0008521694953912451
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.01904761904761905,
+   "chosen_percentile": 0.7619047619047619,
+   "excess_frac_of_spread": 0.019823844294698714,
+   "spread": 0.0008521694953912451
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.01904761904761905,
+   "chosen_percentile": 0.7619047619047619,
+   "excess_frac_of_spread": 0.019823844294698714,
+   "spread": 0.0008521694953912451
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.13333333333333333,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.46112360492799304,
+   "spread": 5.361194681106614e-05
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.1619047619047619,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.46112360492799304,
+   "spread": 5.361194681106614e-05
   },
   {
    "seed": 3,
    "t0": 2,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.1619047619047619,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.46112360492799304,
+   "spread": 5.361194681106614e-05
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.0007466166880134376,
+   "spread": 0.052263848470150844
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.29523809523809524,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.0007466166880134376,
+   "spread": 0.052263848470150844
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3523809523809524,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.0007466166880134376,
+   "spread": 0.052263848470150844
   },
   {
    "seed": 3,
@@ -1775,150 +1775,150 @@
    "t0": 3,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.6571428571428571,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0007935127236957876,
+   "spread": 0.023025480585727297
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2285714285714286,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0007935127236957876,
+   "spread": 0.023025480585727297
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0007935127236957876,
+   "spread": 0.023025480585727297
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.6666666666666667,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.01318287032014315
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.21904761904761907,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.01318287032014315
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2761904761904762,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.01318287032014315
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.46666666666666673,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.013963023389559804,
+   "spread": 0.0017686204044824426
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.0,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.013963023389559804,
+   "spread": 0.0017686204044824426
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.0761904761904762,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.013963023389559804,
+   "spread": 0.0017686204044824426
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2761904761904762,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.019478553614747974,
+   "spread": 0.0009806232995155178
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.13333333333333333,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.019478553614747974,
+   "spread": 0.0009806232995155178
   },
   {
    "seed": 3,
    "t0": 3,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.13333333333333333,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.019478553614747974,
+   "spread": 0.0009806232995155178
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.36190476190476195,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.004534658201587861,
+   "spread": 0.01902598614086591
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1904761904761905,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.01902598614086591
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.14285714285714285,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.01902598614086591
   },
   {
    "seed": 4,
@@ -1955,210 +1955,210 @@
    "t0": 1,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3238095238095238,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.009667632519866352,
+   "spread": 0.004436773126344436
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1142857142857143,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.010579730571263737,
+   "spread": 0.004436773126344436
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.12380952380952383,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.010579730571263737,
+   "spread": 0.004436773126344436
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.13333333333333333,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.016544423324505418,
+   "spread": 0.0013389970064589096
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.0380952380952381,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.01589256495423679,
+   "spread": 0.0013389970064589096
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.06666666666666667,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.01589256495423679,
+   "spread": 0.0013389970064589096
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.05714285714285715,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.23262856862137665,
+   "spread": 0.001246104308236842
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.0,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.2350683178192252,
+   "spread": 0.001246104308236842
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.028571428571428574,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.2350683178192252,
+   "spread": 0.001246104308236842
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.10476190476190478,
+   "chosen_percentile": 0.5238095238095238,
+   "excess_frac_of_spread": 0.06654522975928666,
+   "spread": 0.0009233023656415838
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.028571428571428574,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.06908900130018629,
+   "spread": 0.0009233023656415838
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.0380952380952381,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.06908900130018629,
+   "spread": 0.0009233023656415838
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.04761904761904762,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.46226005027308975,
+   "spread": 1.2467410394875582e-05
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.028571428571428574,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.46430830807777645,
+   "spread": 1.2467410394875582e-05
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.0380952380952381,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.46430830807777645,
+   "spread": 1.2467410394875582e-05
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 7,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.05714285714285715,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.44523198689090393,
+   "spread": 0.0003956447403038899
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 7,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.0380952380952381,
+   "chosen_percentile": 0.7619047619047619,
+   "excess_frac_of_spread": 0.447434240696795,
+   "spread": 0.0003956447403038899
   },
   {
    "seed": 4,
    "t0": 1,
    "horizon": 7,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.04761904761904762,
+   "chosen_percentile": 0.7619047619047619,
+   "excess_frac_of_spread": 0.447434240696795,
+   "spread": 0.0003956447403038899
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4571428571428572,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.00465093171573567,
+   "spread": 0.019854792673864398
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2285714285714286,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.019854792673864398
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.18095238095238098,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.019854792673864398
   },
   {
    "seed": 4,
@@ -2195,180 +2195,180 @@
    "t0": 2,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.380952380952381,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.04968218716080429,
+   "spread": 0.004855121883442433
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1142857142857143,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.05220472821391656,
+   "spread": 0.004855121883442433
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.14285714285714285,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.05220472821391656,
+   "spread": 0.004855121883442433
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.0,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.2532900974676094,
+   "spread": 0.0016442307781748995
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.01904761904761905,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.2557896564450565,
+   "spread": 0.0016442307781748995
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.009523809523809525,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.2557896564450565,
+   "spread": 0.0016442307781748995
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.1142857142857143,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.21755229261008086,
+   "spread": 0.0008874006555494793
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.0380952380952381,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.2204221958812504,
+   "spread": 0.0008874006555494793
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.06666666666666667,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.2204221958812504,
+   "spread": 0.0008874006555494793
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.04761904761904762,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.11913663549245668,
+   "spread": 0.0008961713454795845
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.06666666666666667,
+   "chosen_percentile": 0.7619047619047619,
+   "excess_frac_of_spread": 0.12179944011010446,
+   "spread": 0.0008961713454795845
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.01904761904761905,
+   "chosen_percentile": 0.7619047619047619,
+   "excess_frac_of_spread": 0.12179944011010446,
+   "spread": 0.0008961713454795845
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.009523809523809525,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.5129861918572894,
+   "spread": 8.508522757447526e-06
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.009523809523809525,
+   "chosen_percentile": 0.7619047619047619,
+   "excess_frac_of_spread": 0.5151922401295029,
+   "spread": 8.508522757447526e-06
   },
   {
    "seed": 4,
    "t0": 2,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.0,
+   "chosen_percentile": 0.7619047619047619,
+   "excess_frac_of_spread": 0.5151922401295029,
+   "spread": 8.508522757447526e-06
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5238095238095238,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.002763080831766789,
+   "spread": 0.02310300914384806
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.26666666666666666,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.006471391922333312,
+   "spread": 0.02310300914384806
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2285714285714286,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.006471391922333312,
+   "spread": 0.02310300914384806
   },
   {
    "seed": 4,
@@ -2405,150 +2405,150 @@
    "t0": 3,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.018328578149414777,
+   "spread": 0.004617250744139192
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1619047619047619,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.020651909090729795,
+   "spread": 0.004617250744139192
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.18095238095238098,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.020651909090729795,
+   "spread": 0.004617250744139192
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2285714285714286,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.09414250842594542,
+   "spread": 0.0011428911407013447
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.009523809523809525,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.09748569114795858,
+   "spread": 0.0011428911407013447
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.04761904761904762,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.09748569114795858,
+   "spread": 0.0011428911407013447
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.06666666666666667,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.3462777246249273,
+   "spread": 0.0010276691732991469
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.0380952380952381,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.3489682626396524,
+   "spread": 0.0010276691732991469
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.0380952380952381,
+   "chosen_percentile": 0.6666666666666666,
+   "excess_frac_of_spread": 0.3489682626396524,
+   "spread": 0.0010276691732991469
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.12380952380952383,
+   "chosen_percentile": 0.6190476190476191,
+   "excess_frac_of_spread": 0.20078750939603288,
+   "spread": 0.0010315061895112615
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.0,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.20366841504423566,
+   "spread": 0.0010315061895112615
   },
   {
    "seed": 4,
    "t0": 3,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.0380952380952381,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.20366841504423566,
+   "spread": 0.0010315061895112615
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.6095238095238096,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.029421861258222867
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.380952380952381,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.029421861258222867
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.34285714285714286,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0006186855304964606,
+   "spread": 0.029421861258222867
   },
   {
    "seed": 5,
@@ -2585,210 +2585,210 @@
    "t0": 1,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5047619047619049,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.004617122436414258,
+   "spread": 0.01745521868316772
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.37142857142857144,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.004617122436414258,
+   "spread": 0.01745521868316772
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3523809523809524,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0020466440389174615,
+   "spread": 0.01745521868316772
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5333333333333333,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.00757659114151974,
+   "spread": 0.009318713711385878
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.380952380952381,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.00757659114151974,
+   "spread": 0.009318713711385878
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.34285714285714286,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.008993006218036828,
+   "spread": 0.009318713711385878
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2571428571428572,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.4111352479040173,
+   "spread": 0.001875180097513189
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.4111352479040173,
+   "spread": 0.001875180097513189
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.21904761904761907,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.3910382423823462,
+   "spread": 0.001875180097513189
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.028571428571428574,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.3842933182519203,
+   "spread": 0.0010775512717556496
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.028571428571428574,
+   "chosen_percentile": 0.5714285714285714,
+   "excess_frac_of_spread": 0.3842933182519203,
+   "spread": 0.0010775512717556496
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.009523809523809525,
+   "chosen_percentile": 0.5238095238095238,
+   "excess_frac_of_spread": 0.38220497377834456,
+   "spread": 0.0010775512717556496
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.14285714285714285,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.7289210698611271,
+   "spread": 6.887193558372754e-05
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.12380952380952383,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.7289210698611271,
+   "spread": 6.887193558372754e-05
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.12380952380952383,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.43770494904725343,
+   "spread": 6.887193558372754e-05
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 7,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.46666666666666673,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.019127669976646538,
+   "spread": 0.0005040329095819061
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 7,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.46666666666666673,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.019127669976646538,
+   "spread": 0.0005040329095819061
   },
   {
    "seed": 5,
    "t0": 1,
    "horizon": 7,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.40952380952380957,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.00465517036678829,
+   "spread": 0.0005040329095819061
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5904761904761905,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.030912628125788003
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.36190476190476195,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.030912628125788003
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3238095238095238,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.0076472698776954215,
+   "spread": 0.030912628125788003
   },
   {
    "seed": 5,
@@ -2825,180 +2825,180 @@
    "t0": 2,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.46666666666666673,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.017136083844676193,
+   "spread": 0.020275820722989033
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.33333333333333337,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.017136083844676193,
+   "spread": 0.020275820722989033
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3142857142857143,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.024937400107275038,
+   "spread": 0.020275820722989033
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5142857142857143,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.00779648160042867,
+   "spread": 0.008394365288653192
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.36190476190476195,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.00779648160042867,
+   "spread": 0.008394365288653192
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.34285714285714286,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.010151724284918876,
+   "spread": 0.008394365288653192
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.24761904761904766,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.14812898345211187,
+   "spread": 0.002337124752593918
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.20952380952380956,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.14812898345211187,
+   "spread": 0.002337124752593918
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1904761904761905,
+   "chosen_percentile": 0.47619047619047616,
+   "excess_frac_of_spread": 0.1582585067685668,
+   "spread": 0.002337124752593918
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.29523809523809524,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.13215799298844383,
+   "spread": 0.001006562700839533
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.14285714285714285,
+   "chosen_percentile": 0.38095238095238093,
+   "excess_frac_of_spread": 0.13215799298844383,
+   "spread": 0.001006562700839533
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1619047619047619,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.12507473409766212,
+   "spread": 0.001006562700839533
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.2285714285714286,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.9191308246420186,
+   "spread": 6.708208593292873e-05
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.2285714285714286,
+   "chosen_percentile": 0.7142857142857143,
+   "excess_frac_of_spread": 0.9191308246420186,
+   "spread": 6.708208593292873e-05
   },
   {
    "seed": 5,
    "t0": 2,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": -0.1523809523809524,
+   "chosen_percentile": 0.8095238095238095,
+   "excess_frac_of_spread": 0.9416551558195797,
+   "spread": 6.708208593292873e-05
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.580952380952381,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.031741069514537416
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3523809523809524,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.031741069514537416
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3142857142857143,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 0.003868503488566709,
+   "spread": 0.031741069514537416
   },
   {
    "seed": 5,
@@ -3035,150 +3035,150 @@
    "t0": 3,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4476190476190477,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.03730299519890828,
+   "spread": 0.0178871558365396
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3142857142857143,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.03730299519890828,
+   "spread": 0.0178871558365396
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3142857142857143,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.05298697607080617,
+   "spread": 0.0178871558365396
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4952380952380953,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.007279816927569101,
+   "spread": 0.008969357843967258
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.36190476190476195,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.007279816927569101,
+   "spread": 0.008969357843967258
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.34285714285714286,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.013047646005356508,
+   "spread": 0.008969357843967258
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.20952380952380956,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.12539647008065827,
+   "spread": 0.0018201645751211182
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.17142857142857143,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.12539647008065827,
+   "spread": 0.0018201645751211182
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.1523809523809524,
+   "chosen_percentile": 0.47619047619047616,
+   "excess_frac_of_spread": 0.13610425217127012,
+   "spread": 0.0018201645751211182
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.3139480791345799,
+   "spread": 0.0005885315659934481
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.17142857142857143,
+   "chosen_percentile": 0.42857142857142855,
+   "excess_frac_of_spread": 0.3139480791345799,
+   "spread": 0.0005885315659934481
   },
   {
    "seed": 5,
    "t0": 3,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.17142857142857143,
+   "chosen_percentile": 0.3333333333333333,
+   "excess_frac_of_spread": 0.30101800068270146,
+   "spread": 0.0005885315659934481
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8952380952380954,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 4.59537033637265e-11,
+   "spread": 0.09937203385396347
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5238095238095238,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 4.59537033637265e-11,
+   "spread": 0.09937203385396347
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5238095238095238,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 4.59537033637265e-11,
+   "spread": 0.09937203385396347
   },
   {
    "seed": 6,
@@ -3215,210 +3215,210 @@
    "t0": 1,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8571428571428572,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 2.5662881794650325e-09,
+   "spread": 0.04339146688141361
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.48571428571428577,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 2.5662881794650325e-09,
+   "spread": 0.04339146688141361
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5047619047619049,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 2.5662881794650325e-09,
+   "spread": 0.04339146688141361
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8190476190476191,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 5.448203490910291e-09,
+   "spread": 0.01095304606776792
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.48571428571428577,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 5.448203490910291e-09,
+   "spread": 0.01095304606776792
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5047619047619049,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 5.448203490910291e-09,
+   "spread": 0.01095304606776792
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8761904761904763,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.00547745746145838
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5047619047619049,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.00547745746145838
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5238095238095238,
+   "chosen_percentile": 0.047619047619047616,
+   "excess_frac_of_spread": 0.0,
+   "spread": 0.00547745746145838
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5619047619047619,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.005428864833861861,
+   "spread": 0.001929798786187215
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3238095238095238,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.005428864833861861,
+   "spread": 0.001929798786187215
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.005428864833861861,
+   "spread": 0.001929798786187215
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.580952380952381,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.02161384375151057,
+   "spread": 0.0010072841309612915
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3047619047619048,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.02161384375151057,
+   "spread": 0.0010072841309612915
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.19047619047619047,
+   "excess_frac_of_spread": 0.02161384375151057,
+   "spread": 0.0010072841309612915
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 7,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.580952380952381,
+   "chosen_percentile": 0.47619047619047616,
+   "excess_frac_of_spread": 0.007375583842081826,
+   "spread": 0.0002529939440149547
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 7,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.24761904761904766,
+   "chosen_percentile": 0.47619047619047616,
+   "excess_frac_of_spread": 0.007375583842081826,
+   "spread": 0.0002529939440149547
   },
   {
    "seed": 6,
    "t0": 1,
    "horizon": 7,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3047619047619048,
+   "chosen_percentile": 0.47619047619047616,
+   "excess_frac_of_spread": 0.007375583842081826,
+   "spread": 0.0002529939440149547
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8952380952380954,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 4.5997305673513304e-11,
+   "spread": 0.09936976281373573
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5238095238095238,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 4.5997305673513304e-11,
+   "spread": 0.09936976281373573
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5238095238095238,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 4.5997305673513304e-11,
+   "spread": 0.09936976281373573
   },
   {
    "seed": 6,
@@ -3455,180 +3455,180 @@
    "t0": 2,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8571428571428572,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 4.811628646558186e-09,
+   "spread": 0.0439862547873051
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.48571428571428577,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 4.811628646558186e-09,
+   "spread": 0.0439862547873051
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5047619047619049,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 4.811628646558186e-09,
+   "spread": 0.0439862547873051
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8190476190476191,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 1.091080645091717e-09,
+   "spread": 0.012868933595354733
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.48571428571428577,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 1.091080645091717e-09,
+   "spread": 0.012868933595354733
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5047619047619049,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 1.091080645091717e-09,
+   "spread": 0.012868933595354733
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8761904761904763,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 3.422947174669844e-10,
+   "spread": 0.004989896578887589
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5047619047619049,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 3.422947174669844e-10,
+   "spread": 0.004989896578887589
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5238095238095238,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 3.422947174669844e-10,
+   "spread": 0.004989896578887589
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5428571428571428,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.008099327441616105,
+   "spread": 0.0018064077618755187
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3047619047619048,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.008099327441616105,
+   "spread": 0.0018064077618755187
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2857142857142857,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.008099327441616105,
+   "spread": 0.0018064077618755187
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 6,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.580952380952381,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.02479294922797862,
+   "spread": 0.000894141431913555
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 6,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3238095238095238,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.02479294922797862,
+   "spread": 0.000894141431913555
   },
   {
    "seed": 6,
    "t0": 2,
    "horizon": 6,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.3047619047619048,
+   "chosen_percentile": 0.14285714285714285,
+   "excess_frac_of_spread": 0.02479294922797862,
+   "spread": 0.000894141431913555
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 0,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8476190476190477,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.00019128685047743496,
+   "spread": 0.09621915682205248
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 0,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5142857142857143,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.00019128685047743496,
+   "spread": 0.09621915682205248
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 0,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5333333333333333,
+   "chosen_percentile": 0.2857142857142857,
+   "excess_frac_of_spread": 0.00019128685047743496,
+   "spread": 0.09621915682205248
   },
   {
    "seed": 6,
@@ -3665,152 +3665,152 @@
    "t0": 3,
    "horizon": 2,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8476190476190477,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 5.793439965044264e-10,
+   "spread": 0.04249172533308288
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 2,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5333333333333333,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 5.793439965044264e-10,
+   "spread": 0.04249172533308288
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 2,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5714285714285714,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 5.793439965044264e-10,
+   "spread": 0.04249172533308288
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 3,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.7809523809523811,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 1.278591223090234e-09,
+   "spread": 0.011989966659826382
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 3,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5238095238095238,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 1.278591223090234e-09,
+   "spread": 0.011989966659826382
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 3,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5428571428571428,
+   "chosen_percentile": 0.09523809523809523,
+   "excess_frac_of_spread": 1.278591223090234e-09,
+   "spread": 0.011989966659826382
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 4,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.8285714285714286,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 4.306504104479763e-05,
+   "spread": 0.004650615079517965
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 4,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5333333333333333,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 4.306504104479763e-05,
+   "spread": 0.004650615079517965
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 4,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.5333333333333333,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 4.306504104479763e-05,
+   "spread": 0.004650615079517965
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 5,
    "criterion": "lambda = r^2",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.4571428571428572,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.009836324421674316,
+   "spread": 0.001578725670616411
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 5,
    "criterion": "unweighted ISD",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.21904761904761907,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.009836324421674316,
+   "spread": 0.001578725670616411
   },
   {
    "seed": 6,
    "t0": 3,
    "horizon": 5,
    "criterion": "Runnalls",
-   "kendall": NaN,
-   "chosen_percentile": NaN,
-   "excess_frac_of_spread": NaN,
-   "spread": 0.0
+   "kendall": 0.2380952380952381,
+   "chosen_percentile": 0.23809523809523808,
+   "excess_frac_of_spread": 0.009836324421674316,
+   "spread": 0.001578725670616411
   }
  ],
  "tau": {
   "lambda = r^2": [
+   0.6428571428571429,
    NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN
+   0.5142857142857143,
+   0.5047619047619049,
+   0.3952380952380953,
+   0.29047619047619044,
+   0.24285714285714285,
+   0.27142857142857146
   ],
   "unweighted ISD": [
+   0.3857142857142858,
    NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN
+   0.3238095238095238,
+   0.2666666666666667,
+   0.1904761904761905,
+   0.1380952380952381,
+   0.08571428571428573,
+   0.1285714285714286
   ],
   "Runnalls": [
+   0.37142857142857144,
    NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN,
-   NaN
+   0.319047619047619,
+   0.2761904761904762,
+   0.1904761904761905,
+   0.15714285714285714,
+   0.08571428571428573,
+   0.1761904761904762
   ]
  }
 }

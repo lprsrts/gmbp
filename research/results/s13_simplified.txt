@@ -1,0 +1,19 @@
+S13 Removing the apparatus
+
+    the note's graph, 45 configurations
+      variant                       mean gap  median ratio  beats Runnalls  relative cost
+      runnalls                       0.02319         1.000             0%               
+      isd                            0.02467         0.932            67%               
+      algorithm 1 as written         0.11405        16.159             0%          22.7x
+      minus the reserve              0.01775         0.690           100%          16.3x
+      minus reserve and damping      0.01622         0.671           100%          16.2x
+      single-step rule only          0.01623         0.677           100%           4.5x
+
+    the late-evidence graph, 8 configurations
+      variant                       mean gap  median ratio  beats Runnalls  relative cost
+      runnalls                       0.01312         1.000             0%               
+      isd                            0.01192         0.986            50%               
+      algorithm 1 as written         0.12961         9.026             0%          17.2x
+      minus the reserve              0.01410         0.808            62%          12.8x
+      minus reserve and damping      0.00818         0.554            75%          12.7x
+      single-step rule only          0.00824         0.547            75%           4.7x

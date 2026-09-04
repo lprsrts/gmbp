@@ -1,0 +1,11 @@
+S11 Controls on the relevance field, 36 configurations
+    mean TV gap to the unreduced reference, compared sweep by sweep
+
+    relevance                        mean gap   median ratio to Runnalls   beats Runnalls   beats true lambda
+    Runnalls (local)                  0.03544                     1.000              0%                 0%
+    uniform (plain ISD)               0.03784                     0.991             58%                 6%
+    fixed Gaussian                    0.03642                     0.941             61%                17%
+    shuffled across edges             0.03350                     0.972             58%                17%
+    true, variable->factor only       0.03715                     0.967             56%                 6%
+    true, factor->variable only       0.02778                     0.785            100%                33%
+    true downstream, all edges        0.02772                     0.784            100%                 0%

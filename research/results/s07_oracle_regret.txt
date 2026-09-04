@@ -1,0 +1,18 @@
+S7  Ranking real merges by the damage they do downstream, in the graph
+    The message is pre-reduced to 7 components by Runnalls; the 21 pairs
+    that take it to the budget of 6 are the candidates. Each is carried
+    forward and scored against the unreduced reference at each horizon.
+
+    horizon (sweeps after the merge)           0         1         2         3         4         5         6         7
+    spread of true damage               3.41e-02  0.00e+00  1.02e-02  4.34e-03  1.79e-03  9.10e-04  5.80e-05  1.73e-04
+
+    lambda = r^2 (Kendall tau)             0.643       n/a     0.514     0.505     0.395     0.290     0.243     0.271
+    unweighted ISD (Kendall tau)           0.386       n/a     0.324     0.267     0.190     0.138     0.086     0.129
+    Runnalls (Kendall tau)                 0.371       n/a     0.319     0.276     0.190     0.157     0.086     0.176
+
+    lambda = r^2 (percentile picked)        12%        n/a      19%       14%       36%       45%       36%       52% 
+    unweighted ISD (percentile picked)      10%        n/a      21%       19%       33%       40%       33%       55% 
+    Runnalls (percentile picked)            10%        n/a      24%       21%       33%       31%       33%       55% 
+
+    A spread of zero means every candidate merge left the beliefs in the
+    same place, so there is nothing to rank at that horizon.

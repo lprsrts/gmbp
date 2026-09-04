@@ -1,0 +1,45 @@
+S4a  The note's graph: 72 configurations (6 seeds x 4 regimes x 3 budgets), 6 sweeps, reference compared sweep by sweep
+
+    sensor beliefs, mean over sweeps  (sens_mean)
+      prune              mean 0.15728   median ratio to Runnalls 14.770   beats Runnalls in 0% of configurations
+      runnalls           mean 0.02493   median ratio to Runnalls  1.000   beats Runnalls in 0% of configurations
+      isd                mean 0.02598   median ratio to Runnalls  0.932   beats Runnalls in 68% of configurations
+      adaptive           mean 0.01914   median ratio to Runnalls  0.689   beats Runnalls in 99% of configurations
+      adaptive nobwd     mean 0.01912   median ratio to Runnalls  0.698   beats Runnalls in 99% of configurations
+      adaptive a=1.0     mean 0.01810   median ratio to Runnalls  0.681   beats Runnalls in 99% of configurations
+
+    sensor beliefs, final sweep  (sens_final)
+      prune              mean 0.14042   median ratio to Runnalls 10.935   beats Runnalls in 0% of configurations
+      runnalls           mean 0.02181   median ratio to Runnalls  1.000   beats Runnalls in 0% of configurations
+      isd                mean 0.02490   median ratio to Runnalls  0.962   beats Runnalls in 61% of configurations
+      adaptive           mean 0.01407   median ratio to Runnalls  0.572   beats Runnalls in 96% of configurations
+      adaptive nobwd     mean 0.01399   median ratio to Runnalls  0.571   beats Runnalls in 99% of configurations
+      adaptive a=1.0     mean 0.01305   median ratio to Runnalls  0.561   beats Runnalls in 97% of configurations
+
+    class beliefs, mean over sweeps  (cls_mean)
+      prune              mean 0.07454   median ratio to Runnalls 18.314   beats Runnalls in 0% of configurations
+      runnalls           mean 0.00608   median ratio to Runnalls  1.000   beats Runnalls in 0% of configurations
+      isd                mean 0.00658   median ratio to Runnalls  0.896   beats Runnalls in 62% of configurations
+      adaptive           mean 0.00514   median ratio to Runnalls  0.700   beats Runnalls in 82% of configurations
+      adaptive nobwd     mean 0.00508   median ratio to Runnalls  0.766   beats Runnalls in 75% of configurations
+      adaptive a=1.0     mean 0.00487   median ratio to Runnalls  0.678   beats Runnalls in 83% of configurations
+
+S4b  Weak distant hypothesis, evidence for it arriving at sweep 3 (8 seeds, 8 sweeps, budget 6)
+
+    sensor beliefs, mean over sweeps  (sens_mean)
+      prune              mean 0.21395   median ratio to Runnalls 16.044   beats Runnalls in 0% of configurations
+      runnalls           mean 0.01312   median ratio to Runnalls  1.000   beats Runnalls in 0% of configurations
+      isd                mean 0.01192   median ratio to Runnalls  0.986   beats Runnalls in 50% of configurations
+      adaptive           mean 0.01410   median ratio to Runnalls  0.808   beats Runnalls in 62% of configurations
+      adaptive nobwd     mean 0.01423   median ratio to Runnalls  0.844   beats Runnalls in 62% of configurations
+      adaptive a=1.0     mean 0.00818   median ratio to Runnalls  0.554   beats Runnalls in 75% of configurations
+
+    sensor beliefs, final sweep  (sens_final)
+      prune              mean 0.22886   median ratio to Runnalls 15.161   beats Runnalls in 12% of configurations
+      runnalls           mean 0.01362   median ratio to Runnalls  1.000   beats Runnalls in 0% of configurations
+      isd                mean 0.01259   median ratio to Runnalls  1.038   beats Runnalls in 38% of configurations
+      adaptive           mean 0.01365   median ratio to Runnalls  0.602   beats Runnalls in 62% of configurations
+      adaptive nobwd     mean 0.01366   median ratio to Runnalls  0.605   beats Runnalls in 62% of configurations
+      adaptive a=1.0     mean 0.00152   median ratio to Runnalls  0.101   beats Runnalls in 100% of configurations
+
+    elapsed 894s

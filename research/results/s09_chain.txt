@@ -1,0 +1,36 @@
+S9  Chain graph. Reference is Runnalls at budget 150; raising it to
+    300 moves the reference by TV 1.60e-11 (mean over 3 seeds),
+    which bounds the error this stand-in contributes.
+
+S9a Same deletion test, on a chain (no regeneration path)
+
+    seed  edge                 weight   TV to reference from the deletion onward
+    0     t1->x2               0.1901   0.01187  0.00339  0.00192  0.00079  0.00009
+    1     t2->x3               0.1495   0.01699  0.00939  0.00541  0.00163  0.00000
+    2     t1->x2               0.1780   0.01424  0.00737  0.00475  0.00352  0.00138
+    3     t1->x2               0.1977   0.01849  0.01219  0.00877  0.00741  0.00167
+    4     t1->x2               0.1019   0.01382  0.00941  0.00717  0.00495  0.00127
+
+    final TV as a fraction of the TV right after deletion: median 0.090
+    (S8a on the note's graph gave 0.002 -- there the hypothesis came back)
+
+S9b Does the reserve earn its cost on a chain?
+
+    variant                   mean TV gap  x no-reserve  reactivations
+    no reserve                    0.00091         1.00x              0
+    as written, tau=0.1           0.05672        62.51x            526
+    repaired,   tau=0.1           0.00091         1.00x              0
+    as written, tau=1             0.00161         1.77x            148
+    repaired,   tau=1             0.00091         1.00x              0
+    relative,   k=1               0.00091         1.00x              0
+    relative,   k=3               0.00091         1.00x              0
+    relative,   k=10              0.00091         1.00x              0
+
+S9c Principal hypothesis on a chain (mean TV gap to the unreduced reference)
+
+    method               mean gap  median ratio to Runnalls   beats Runnalls
+    prune                 0.06467                   44.464              0%
+    runnalls              0.00236                    1.000              0%
+    isd                   0.00251                    0.989             56%
+    adaptive              0.00219                    0.929             83%
+    adaptive a=1.0        0.00218                    0.917             89%

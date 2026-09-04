@@ -36,7 +36,7 @@ effect is large. The machinery built around it is inert or harmful.
 |---|---|
 | Region-weighted ISD has an exact closed form for Gaussian weights | **Holds.** Matches quadrature to 2e-16 median (S0) |
 | Eq. (18): λ = r² is the exact single-step downstream weight | **Holds.** Reproduced to 5e-15 median (S0), and τ = 1.000 as a merge ranker (S3) |
-| λ = r² beats local criteria at predicting downstream damage | **Holds**, and survives normalisation, marginalisation and staleness (S3) |
+| λ = r² beats local criteria at predicting downstream damage | **Holds.** τ 0.86 vs 0.77 on a synthetic downstream (S3); 0.64 vs 0.39 against an oracle inside the real loop (S7) |
 | Principal hypothesis: D(ref, adaptive) < D(ref, local) | **Holds** for the single-step rule: 99–100% of configurations (S4, S11, S13). **Fails** for Algorithm 1 as written: 0% (S13) |
 | Damping α (Eq. 49) stabilises the coupled iteration | **Nothing to stabilise, and it hurts.** α = 1 is better everywhere (S5, S4b, S13) |
 | Backward relevance propagation (Eqs. 39–50) | **Inert.** Removing it changes nothing but cost (S4, S11, S13) |
@@ -448,6 +448,39 @@ significant figures. That is worth recording because it is the failure mode
 of the whole idea stated cleanly: **downstream-aware reduction has nothing to
 offer where there is no downstream information**, and it degrades to the
 unweighted criterion rather than to something worse.
+
+## S7 — Against an oracle, inside the real loop
+
+S3 scored the weight on a synthetic one-step downstream. This is the version
+with nothing held back: at an actual reduction event in the loopy graph, take
+the candidate merges, carry each one through to the end of inference, and
+measure the damage it really did. The message is pre-reduced to 7 components
+by Runnalls so that the 21 pairs taking it to the budget of 6 are genuinely
+different reductions; each criterion is then scored against that ground
+truth, with the relevance computed exactly as the method computes it —
+capped, damped and stale.
+
+| horizon (sweeps after the merge) | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---|---|---|---|---|---|---|---|
+| spread of true damage | 3.4e-02 | 0 | 1.0e-02 | 4.3e-03 | 1.8e-03 | 9.1e-04 | 5.8e-05 | 1.7e-04 |
+| **λ = r² (Kendall τ)** | **0.643** | — | **0.514** | **0.505** | **0.395** | **0.290** | **0.243** | **0.271** |
+| unweighted ISD | 0.386 | — | 0.324 | 0.267 | 0.190 | 0.138 | 0.086 | 0.129 |
+| Runnalls' bound | 0.371 | — | 0.319 | 0.276 | 0.190 | 0.157 | 0.086 | 0.176 |
+
+**λ = r² is the better predictor at every horizon where there is anything to
+predict**, and by a wide margin: 0.643 against 0.386 and 0.371 immediately,
+0.51 against 0.32 two sweeps out. This is the cleanest statement of what the
+weight buys, because it is measured against the actual objective rather than
+a surrogate, in the loopy graph, with every one of the derivation's
+assumptions violated at once.
+
+Two things to read off the first row. Horizon 1 is empty because of the
+flooding schedule: a change to a factor→variable message needs one sweep to
+reach the class messages and a second to come back through them to the sensor
+beliefs. And the spread decays by a factor of 200 from horizon 0 to horizon 7
+— **a single reduction decision is largely forgotten within a few sweeps**,
+which is the same fact S8a establishes from the other direction and the
+reason the reserve set has so little to protect.
 
 ## S13 — Removing the apparatus
 
