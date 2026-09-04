@@ -50,12 +50,17 @@ def one_event(seed=1, T=8, budget=6, t0=2, regime="medium"):
         bp.sweep(lam_lookup=field.lookup)
         field.update(bp.msg)
 
+    # It must be a factor->variable message. A variable->factor message is
+    # recomputed from scratch at the start of every sweep and is never read
+    # as an input, so injecting a merge into one is a no-op.
     key, best = None, None
-    for v in g2.sensors:
-        for fn in g2.nbrs[v]:
-            m = bp.var_to_factor(v, fn)
+    for fname, f in g2.factors.items():
+        for v in f.scope:
+            if v in g2.classes:
+                continue
+            m = bp.factor_to_var(fname, v)
             if isinstance(m, GM) and (best is None or m.n > best.n):
-                key, best = (v, fn), m
+                key, best = (fname, v), m
     if key is None or best.n <= budget:
         return None
     pre = unit(reduce_runnalls(best, budget + 1))
